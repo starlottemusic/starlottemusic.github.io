@@ -4,7 +4,13 @@ title: Starlotte Music
 description: starlottemusic@gmail.com
 ---
 
+```html
+<head>
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+</head>
+```
+
+
 
 ## Hey guys!
 
@@ -17,7 +23,7 @@ This is a bit messy, but should only be temporary. The site'll be up and running
 Currently, if you're interested in commissioning me, email me at starlottemusic@gmail.com.
 I'll send you prices then.
 
-
+ 
 
 
 
