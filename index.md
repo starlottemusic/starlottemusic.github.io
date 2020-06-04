@@ -1,11 +1,8 @@
-<head>
-<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-</head>
-
 ---
 layout: default
 title: Starlotte Music
 description: starlottemusic@gmail.com
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 ---
 
 
