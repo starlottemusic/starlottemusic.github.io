@@ -1,8 +1,28 @@
+<head>
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+</head>
+
 ---
 layout: default
+title: Starlotte Music
+description: starlottemusic@gmail.com
 ---
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
+
+## Hey guys!
+
+So long story short, the previous website I had set up ended up getting deleted. I'm currently in the process of recreating it in GitHub, which should be more stable. 
+
+This is a bit messy, but should only be temporary. The site'll be up and running again in no time.
+
+## Contact Me
+
+Currently, if you're interested in commissioning me, email me at starlottemusic@gmail.com.
+I'll send you prices then.
+
+
+
+
 
 [Link to another page](./another-page.html).
 
