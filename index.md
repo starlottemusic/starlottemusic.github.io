@@ -2,9 +2,9 @@
 layout: default
 title: Starlotte Music
 description: starlottemusic@gmail.com
-<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 ---
 
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
 ## Hey guys!
 
