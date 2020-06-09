@@ -1,5 +1,9 @@
 # frozen_string_literal: true
 
+<head>
+<link rel='shortcut icon' href='/img/favicon.ico'>
+</head>
+  
 Gem::Specification.new do |s|
   s.name          = 'jekyll-theme-cayman'
   s.version       = '0.1.1'
