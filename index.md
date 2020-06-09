@@ -5,7 +5,7 @@ description: starlottemusic@gmail.com
 ---
 
 <head>
- <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
+<link rel='shortcut icon' href='/img/favicon.ico'>
 </head>
 
 
