@@ -2,9 +2,6 @@
 layout: default
 title: Starlotte Music
 description: starlottemusic@gmail.com
-<head>
-<link rel='shortcut icon' href='/img/favicon.ico'>
-</head>
 ---
 
 
@@ -124,6 +121,10 @@ end
 
 ### Definition lists can be used with HTML syntax.
 
+
+<head>
+<link rel='shortcut icon' href='/img/favicon.ico'>
+</head>
 <dl>
 <dt>Name</dt>
 <dd>Godzilla</dd>
