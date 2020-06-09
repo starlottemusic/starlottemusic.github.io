@@ -2,6 +2,7 @@
 <html lang="{{ site.lang | default: "en-US" }}">
   <head>
 <link rel='shortcut icon' href='/img/favicon.ico'>
+    
     {% if site.google_analytics %}
       <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
       <script>
@@ -15,9 +16,9 @@
 
 {% seo %}
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#157878">
+    <meta name="theme-color" content="#867499">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | test }}">
   </head>
   <body>
     <a id="skip-to-content" href="#content">Skip to the content.</a>
