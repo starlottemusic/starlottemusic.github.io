@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Another page
-description: This is just another page
+title: Starlotte Music
+description: starlottemusic@gmail.com
 ---
 
 ## Welcome to another page
