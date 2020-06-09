@@ -1,9 +1,8 @@
 ---
 layout: default
-title: Starlotte Music
+title: "Starlotte Music"
 description: starlottemusic@gmail.com
 ---
-
 
 
 
