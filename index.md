@@ -122,9 +122,6 @@ end
 ### Definition lists can be used with HTML syntax.
 
 
-<head>
-<link rel='shortcut icon' href='/img/favicon.ico'>
-</head>
 <dl>
 <dt>Name</dt>
 <dd>Godzilla</dd>
