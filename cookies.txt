@@ -1,6 +1,0 @@
-# HTTrack Website Copier Cookie File
-# This file format is compatible with Netscape cookies
-.carrd.co	TRUE	/	FALSE	1999999999	__cfduid	d596f9585350332369c7ba68a55db40361594282002
-876664763f8c1751.demo.carrd.co	TRUE	/	FALSE	1999999999	__cflb	0H28unazevof7rv9ZiK6CC7g5v8qTHn1cJixZidWkYM
-876664763f8c1751.demo.carrd.co	TRUE	/	FALSE	1999999999	SameSite	Lax
-
