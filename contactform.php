@@ -6,7 +6,7 @@ if (isset($_POST['submit'])) {
    $mailFrom = $_POST['mail'];
    $message = $_POST['message'];
 
-   $mailTo = "starlottemusic@outlook.com";
+   $mailTo = "dani@mmtuts.net";
    $headers = "COMMISSION: ".$mailFrom;
    $txt = "You have recieved a commission from ".$name.".\n\n".$message;
 
