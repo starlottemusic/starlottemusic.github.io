@@ -11,6 +11,6 @@ if (isset($_POST['submit'])) {
    $txt = "You have recieved a commission from ".$name.".\n\n".$message;
 
    mail($mailTo, $subject, $headers);
-   header("Location: index.php?mailsent");
+   header("Location: index.php?sendmessage");
 
 }
