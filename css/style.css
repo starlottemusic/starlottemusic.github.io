@@ -187,12 +187,12 @@ Home sections
 
 .home-section {
 	width: 100%;
-	padding: 150px 0px 150px 0px;
+	padding: 50px 0px 50px 0px;
 }
 
 /* --- heading --- */
 .section-heading {
-	margin-bottom: 10px;
+	margin-bottom: 50px;
 }
 
 .section-heading h2 {
