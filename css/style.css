@@ -244,9 +244,13 @@ Parallax
 
 #parallax1{
 	background-image: url(../img/parallax/piano.png);
+	max-width: 100%;
+    height: auto;
 }
 #parallax2{
 	background-image: url(../img/parallax/piano.png);
+	max-width: 100%;
+    height: auto;
 }
 
 
