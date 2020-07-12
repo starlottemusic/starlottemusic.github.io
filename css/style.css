@@ -412,7 +412,8 @@ About
 ================================= */
 
 #about .about-img {
-  height: 350px;
+  width: 350px;
+  height: auto;
   overflow: hidden;
 }
 
