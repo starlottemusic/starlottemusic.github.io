@@ -26,9 +26,34 @@ h2 {
 h3 {
   color: white
   }
+#player {
+position: fixed;
+display: none;
+width: 25%;
+height: 25%;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: rgba(0,0,0,0.5);
+z-index: 2;
+cursor: pointer;
+}
 </style>
+<script>
+{
+  document.getElementById("player").style.display = "block";
+}
+</script>  
 </head>
 
+<div id="player">
+  <div id="text">Overlay Text</div>
+</div>
+  
+
+
+  
 <body style="background-color:#181818;">
 
   <!-- Navigation -->
