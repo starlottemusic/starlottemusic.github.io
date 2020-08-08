@@ -1,136 +1,77 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-  <link rel='shortcut icon' href='/img/favicon.ico'>
-  <title>Starlotte Music</title>
-  <meta charset="utf-8" />
-  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-  <!-- css -->
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,300,700,800" rel="stylesheet" media="screen">
+<meta charset="utf-8" />
+<!-- Website Design By: www.happyworm.com -->
+<title>Demo : jPlayer as an audio player</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="../../dist/skin/blue.monday/css/jplayer.blue.monday.min.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../../lib/jquery.min.js"></script>
+<script type="text/javascript" src="../../dist/jplayer/jquery.jplayer.min.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+$(document).ready(function(){
 
-  <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-  <link href="css/style.css" rel="stylesheet" media="screen">
-  <link href="color/default.css" rel="stylesheet" media="screen">
-
-<style>
-p {
-  color: white
-}
-h1 {
-  color: white
-  }
-h2 {
-  color: white
-  }
-h3 {
-  color: white
-  }
-</style>
+	$("#jquery_jplayer_1").jPlayer({
+		ready: function (event) {
+			$(this).jPlayer("setMedia", {
+				title: "Bubble",
+				m4a: "http://jplayer.org/audio/m4a/Miaow-07-Bubble.m4a",
+				oga: "http://jplayer.org/audio/ogg/Miaow-07-Bubble.ogg"
+			});
+		},
+		swfPath: "../../dist/jplayer",
+		supplied: "m4a, oga",
+		wmode: "window",
+		useStateClassSkin: true,
+		autoBlur: false,
+		smoothPlayBar: true,
+		keyEnabled: true,
+		remainingDuration: true,
+		toggleDuration: true
+	});
+});
+//]]>
+</script>
 </head>
-
-    <!-- Audio PLayer -->
-
-
-
-
-
-
-
-
-
-<body style="background-color:#181818;">
-
-  <!-- Navigation -->
-  <nav class="navbar navbar-default" role="navigation">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-          <span class="sr-only">Toggle nav</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-
-        <!-- Logo text or image -->
-        <a class="navbar-brand" href="index.html"><img src="img/logos/Starlotte Music Logo No Background.png" width="115" height="72" alt="Starlotte Music" style = "position:absolute; left:25px; top:-2px;"></a>
-
-      </div>
-      <div class="navigation collapse navbar-collapse navbar-ex1-collapse">
-        <ul class="nav navbar-nav">
-          <li class="current"><a href="#about">Home</a></li>
-          <li><a href="#about">About Me</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#parallax2">Reviews</a></li>
-          <li><a href="#contact">Pricing & Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- About -->
-  <section id="about" class="home-section bg-white" style="background-color:#181818;">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-offset-2 col-md-8">
-          <div class="section-heading">
-            <h2>ABOUT ME</h2>
-            <div class="heading-line"></div>
-          </div>
-        </div>
-      </div>
-      <div class="row wow fadeInUp">
-        <div class="col-md-6 about-img">
-          <img src="img/guitar.png" alt="">
-        </div>
-
-        <div class="col-md-6 content">
-          <h2 style="color:#e0e0e0">Who am I?</h2>
-          <p>
-            Hi! I'm Charlotte Veronica, and writing music professionally has been my
-            passion for a long time now. I started Starlotte Music as a means to put
-            my name out into the professional world. With this, I hope to take the
-            next big step in my journey towards composing professionally.
-          </p>
-          <h2 style="color:#e0e0e0">What is Starlotte Music?</h2>
-          <p>
-            Starlotte Music is an individually run commission-based music composition
-            and production service. Whatever you may need music for, be it a game,
-            short film, video, etc., Starlotte Music will produce high quality songs
-            for your project. For pricing details, as well as contact with me, click
-            <a href="#contact">here</a>. Additionally, a portfolio with some of my best works can be found <a href="#portfolio">here</a>.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Parallax 1 -->
-  <section id="parallax1" class="home-section parallax" data-stellar-background-ratio="0.5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="color-light">
-<iframe allowtransparency="true" scrolling="no" frameborder="no" src="https://w.soundcloud.com/icon/?url=http%3A%2F%2Fsoundcloud.com%2Fstarlotte-117&color=white_transparent&size=64" style="width: 64px; height: 64px;"></iframe>
- <p class="lead wow bounceInUp" data-wow-delay="1s">Check out my Soundcloud</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-          <p>Copyright &copy; Starlotte Music. All rights reserved.</p>
-  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-  <!-- js -->
-  <script src="js/jquery.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/wow.min.js"></script>
-  <script src="js/jquery.scrollTo.min.js"></script>
-  <script src="js/jquery.nav.js"></script>
-  <script src="js/modernizr.custom.js"></script>
-  <script src="js/grid.js"></script>
-  <script src="js/stellar.js"></script>
-  <!-- Template Custom Javascript File -->
-  <script src="js/custom.js"></script>
+<body>
+<div id="jquery_jplayer_1" class="jp-jplayer"></div>
+<div id="jp_container_1" class="jp-audio" role="application" aria-label="media player">
+	<div class="jp-type-single">
+		<div class="jp-gui jp-interface">
+			<div class="jp-controls">
+				<button class="jp-play" role="button" tabindex="0">play</button>
+				<button class="jp-stop" role="button" tabindex="0">stop</button>
+			</div>
+			<div class="jp-progress">
+				<div class="jp-seek-bar">
+					<div class="jp-play-bar"></div>
+				</div>
+			</div>
+			<div class="jp-volume-controls">
+				<button class="jp-mute" role="button" tabindex="0">mute</button>
+				<button class="jp-volume-max" role="button" tabindex="0">max volume</button>
+				<div class="jp-volume-bar">
+					<div class="jp-volume-bar-value"></div>
+				</div>
+			</div>
+			<div class="jp-time-holder">
+				<div class="jp-current-time" role="timer" aria-label="time">&nbsp;</div>
+				<div class="jp-duration" role="timer" aria-label="duration">&nbsp;</div>
+				<div class="jp-toggles">
+					<button class="jp-repeat" role="button" tabindex="0">repeat</button>
+				</div>
+			</div>
+		</div>
+		<div class="jp-details">
+			<div class="jp-title" aria-label="title">&nbsp;</div>
+		</div>
+		<div class="jp-no-solution">
+			<span>Update Required</span>
+			To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+		</div>
+	</div>
+</div>
 </body>
+
 </html>
