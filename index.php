@@ -1,6 +1,14 @@
 <!DOCTYPE html>
-<html>
+<?php
+require_once "vendor/autoload.php"
+$detect = new Mobile_Detect;
 
+if ( $detect->isMobile() ) {
+    header("Location: https://www.youtube.com/watch?v=w8UMaQsZWCY");
+}
+?>
+
+<html>
 <head>
   <link rel='shortcut icon' href='/img/favicon.ico'>
   <title>Starlotte Music</title>
@@ -14,13 +22,6 @@
   <link href="color/default.css" rel="stylesheet" media="screen">
 
 
-  <script>
-  window.addEventListener('resize', function() {
-	if (window.innerWidth <= 600) {
-		window.location.href = "http://www.google.com";
-	}
-});
-</script>
 
 
 <style>
