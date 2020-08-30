@@ -15,11 +15,11 @@
 
 
   <script>
-  if($(window).width() < 480){
-
-  window.location = "https://soundcloud.com/starlotte-117"
-
-  }
+  window.addEventListener('resize', function() {
+	if (window.innerWidth <= 600) {
+		window.location.href = "http://www.google.com";
+	}
+});
 </script>
 
 
