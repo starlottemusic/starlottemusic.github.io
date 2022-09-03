@@ -279,25 +279,6 @@ main {
     font-weight: 500;
 }
 
-#typewriter {
-    background-color: transparent;
-    position: relative;
-    color: var(--accent)
-}
-
-#typewriter::after {
-    content: '';
-    background-color: var(--accent-duller);
-    position: absolute;
-    right:-2px;;
-    top:0.4rem;
-    bottom:4px;
-    width: 2px;
-    animation: blinkingText 1.2s infinite;
-
-}
-
-
 @keyframes blinkingText{
     0%{     opacity: 1;    }
     49%{    opacity: 1; }

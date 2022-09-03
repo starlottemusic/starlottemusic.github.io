@@ -27,10 +27,6 @@ var texts = ["game", "backend", "software"]
 var textIndex = 0;
 var wordIndex = 0;
 
-function updateWord(){
-    $("#typewriter").html(texts[textIndex].substring(0, wordIndex))
-}
-
 function type(){
     if(textIndex > texts.length){
         textIndex = 0;
