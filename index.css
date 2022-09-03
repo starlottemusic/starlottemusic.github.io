@@ -9,7 +9,7 @@
     --text-primary: #b8b8b8;
     --text-secondary: #ececec;
 
-    --accent: #d62828;
+    --accent: #a295b1;
     --accent-duller: #bd2d10;
     --scroll-bg: rgb(40, 34, 54);
 
@@ -53,7 +53,7 @@ body {
     background: black;
     background-color: var(--home-bg-secondary);
     opacity: 1;
-    background-image:  url("this.png");
+    background-image:  url("stars.png");
     background-repeat: repeat;
 
     margin: 0px;
@@ -67,7 +67,7 @@ html {
     background: black;
     background-color: var(--home-bg-secondary);
     opacity: 1;
-    background-image:  url("this.png");
+    background-image:  url("stars.png");
     background-repeat: repeat;
 }
 
@@ -269,7 +269,7 @@ main {
     
 }
 
-.name {
+.list {
     background-color: transparent;
     color: var(--accent);
     font-weight: 500;
