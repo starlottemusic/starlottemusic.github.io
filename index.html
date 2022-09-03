@@ -1,564 +1,750 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <link rel='shortcut icon' href='/img/favicon.ico'>
-  <title>Starlotte Music</title>
-  <meta charset="utf-8" />
-  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-  <!-- css -->
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,300,700,800" rel="stylesheet" media="screen">
+:root {
+    font-size: 16px;
+    font-family: 'Open Sans';
 
-  <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-  <link href="css/style.css" rel="stylesheet" media="screen">
-  <link href="color/default.css" rel="stylesheet" media="screen">
+    --bg-primary: rgba(41, 38, 49, 0.4);
+    --bg-secondary: rgba(20, 20, 24, 0.5);
+    --bg-third: rgba(17, 17, 20, 0.8);
 
+    --text-primary: #b8b8b8;
+    --text-secondary: #ececec;
 
-  <script src="redirection-mobile.js"></script>
-  <script>
-  SA.redirection_mobile ({
-mobile_url : "www.soundcloud.com/starlotte-117",
-mobile_prefix : "https"
-});;
-  </script>
+    --accent: #d62828;
+    --accent-duller: #bd2d10;
+    --scroll-bg: rgb(40, 34, 54);
 
+    --icon-color:
 
-<style>
-p {
-  color: white
+    --scroll-width: 0.6rem;
+
+    --icon-margin: 1.5rem;
+
+    --navbar-hovered-width: 16rem;
+
+    --home-bg-primary: hsl(240, 6%, 13%);
+    --home-bg-secondary: hsl(240, 6%, 12%);
+
+    --card-shadow-color: #161616;
+    --card-shadow-size: 12px;    
+    /* scroll-behavior: smooth; */
 }
-h1 {
-  color: white
-  }
-h2 {
-  color: white
-  }
-h3 {
-  color: white
-  }
-</style>
-</head>
-
-    <!-- Audio PLayer -->
 
 
 
-
-
-
-
-
-
-<body style="background-color:#181818;">
-
-  <!-- Navigation -->
-  <nav class="navbar navbar-default" role="navigation">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-          <span class="sr-only">Toggle nav</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-
-        <!-- Logo text or image -->
-        <a class="navbar-brand" href="index.html"><img src="img/logos/Starlotte Music Logo No Background.png" width="115" height="72" alt="Starlotte Music" style = "position:absolute; left:25px; top:-2px;"></a>
-
-      </div>
-      <div class="navigation collapse navbar-collapse navbar-ex1-collapse">
-        <ul class="nav navbar-nav">
-          <li class="current"><a href="#intro">Home</a></li>
-          <li><a href="#about">About Me</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#parallax2">Reviews</a></li>
-          <li><a href="#contact">Pricing & Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- intro area -->
-  <section id="intro">
-    <div class="intro-container">
-      <div id="introCarousel" class="carousel slide carousel-fade" data-ride="carousel">
-
-        <div class="carousel-inner" role="listbox">
-
-          <!-- Slide 1 -->
-          <div class="item active">
-            <div class="carousel-background"><img src="img/header.png" alt=""></div>
-            <div class="carousel-container">
-              <div class="carousel-content">
-                <img src="img/logos/Starlotte Music Logo No Background Glow.png" width="587" height="360" alt="Starlotte Music" style="transform: rotate(-5deg);">
-                <p class="animated fadeInUp"  style="text-shadow: 0px 0px 5px #000;">Conact me at starlottemusic@gmail.com</p>
-                <a href="#about" class="btn-get-started animated fadeInUp">About Me</a> <a href="#portfolio" class="btn-get-started animated fadeInUp">My Portfolio</a> <a href="#contact" class="btn-get-started animated fadeInUp">Get in Contact</a>
-              </div>
-            </div>
-          </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section><!-- #intro -->
-
-  <!-- About -->
-  <section id="about" class="home-section bg-white" style="background-color:#181818;">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-offset-2 col-md-8">
-          <div class="section-heading">
-            <h2>ABOUT ME</h2>
-            <div class="heading-line"></div>
-          </div>
-        </div>
-      </div>
-      <div class="row wow fadeInUp">
-        <div class="col-md-6 about-img">
-          <img src="img/guitar.png" alt="">
-        </div>
-
-        <div class="col-md-6 content">
-          <h2 style="color:#e0e0e0">Who am I?</h2>
-          <p>
-            Hi! I'm Charlotte Veronica, and writing music professionally has been my
-            passion for a long time now. I started Starlotte Music as a means to put
-            my name out into the professional world. With this, I hope to take the
-            next big step in my journey towards composing professionally.
-          </p>
-          <h2 style="color:#e0e0e0">What is Starlotte Music?</h2>
-          <p>
-            Starlotte Music is an individually run commission-based music composition
-            and production service. Whatever you may need music for, be it a game,
-            short film, video, etc., Starlotte Music will produce high quality songs
-            for your project. For pricing details, as well as contact with me, click
-            <a href="#contact">here</a>. Additionally, a portfolio with some of my best works can be found <a href="#portfolio">here</a>.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Parallax 1 -->
-  <section id="parallax1" class="home-section parallax" data-stellar-background-ratio="0.5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="color-light">
-<iframe allowtransparency="true" scrolling="no" frameborder="no" src="https://w.soundcloud.com/icon/?url=http%3A%2F%2Fsoundcloud.com%2Fstarlotte-117&color=white_transparent&size=64" style="width: 64px; height: 64px;"></iframe>
- <p class="lead wow bounceInUp" data-wow-delay="1s">Check out my Soundcloud</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- Works -->
-  <section id="portfolio" class="home-section bg-white" style="background-color:#181818;">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-offset-2 col-md-8">
-          <div class="section-heading">
-            <h2>PORTFOLIO</h2>
-            <div class="heading-line"></div>
-            <p>I've been writing music across many styles and genres over the past <script>document.write(new Date().getFullYear()-2016)</script> years, and have had experience with music for over <script>document.write(new Date().getFullYear()-2011)</script>.
-              Below is some of my best works from those years.</p>
-          </div>
-        </div>
-      </div>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
 * {
-  box-sizing: border-box;
+    margin:0;
+    padding:0;
 }
 
-/* Create three equal columns that floats next to each other */
-.columns {
-  float: left;
-  width: 33.33%;
-  padding: 10px;
-
+body::-webkit-scrollbar {
+    width: var(--scroll-width);
 }
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+body::-webkit-scrollbar-track {
+    background: var(--scroll-bg);
 }
-</style>
-</head>
-<body>
-<div class="row">
-  <div class="columns">
+body::-webkit-scrollbar-thumb {
+    background: var(--accent);
+    border-radius: calc(var(--scroll-width) / 2 );
+}
+body {
+    touch-action: none;
+    
+    color: black;
+    background: black;
+    background-color: var(--home-bg-secondary);
+    opacity: 1;
+    background-image:  linear-gradient(135deg, var(--home-bg-primary) 25%, transparent 25%), linear-gradient(225deg, var(--home-bg-primary) 25%, transparent 25%), linear-gradient(45deg, var(--home-bg-primary) 25%, transparent 25%), linear-gradient(315deg, var(--home-bg-primary) 25%, var(--home-bg-secondary) 25%);
+    background-position:  50px 0, 50px 0, 0 0, 0 0;
+    background-size: 100px 100px;
+    background-repeat: repeat;
 
-<iframe width="100%" height="400" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/733290016&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-
-
-  </div>
-  <div class="columns">
-
-<iframe width="100%" height="400" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/884934571&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/starlotte-117" title="Starlotte" target="_blank" style="color: #cccccc; text-decoration: none;">Starlotte</a> · <a href="https://soundcloud.com/starlotte-117/daoimean-vortex" title="[Commission] Daoimean Vortex" target="_blank" style="color: #cccccc; text-decoration: none;">[Commission] Daoimean Vortex</a></div>
-
-
-
-
-
-
-
-
-
-
-
-  </div>
-  <div class="columns" >
-
-
-<iframe width="100%" height="400" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/640238823&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-
-
-  </div>
-</div>
-
-</body>
-</html>
-
-<!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
 }
 
 
-/* Create three equal columns that floats next to each other */
-.columns {
-  float: left;
-  width: 33.33%;
-  padding: 10px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-</style>
-</head>
-<body>
-<div class="row">
-  <div class="columns">
-
-<iframe width="100%" height="400" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/617669994%3Fsecret_token%3Ds-zNDoatePQrH&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-
-<style>
-</style>
-
-  </div>
-  <div class="columns">
-
-
-<iframe width="100%" height="400" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/772140394&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-
-  </div>
-  <div class="columns" >
-
-
-<iframe width="100%" height="400" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/595683327&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>>
-
-  </div>
-</div>
-
-</body>
-</html>
-
-<!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
+html {
+    color: black;
+    background: black;
+    background-color: var(--home-bg-secondary);
+    opacity: 1;
+    background-image:  linear-gradient(135deg, var(--home-bg-primary) 25%, transparent 25%), linear-gradient(225deg, var(--home-bg-primary) 25%, transparent 25%), linear-gradient(45deg, var(--home-bg-primary) 25%, transparent 25%), linear-gradient(315deg, var(--home-bg-primary) 25%, var(--home-bg-secondary) 25%);
+    background-position:  50px 0, 50px 0, 0 0, 0 0;
+    background-size: 100px 100px;
+    background-repeat: repeat;
 }
 
 
-/* Create three equal columns that floats next to each other */
-.columns {
-  float: left;
-  width: 33.33%;
-  padding: 10px;
+
+/* Navbar */
+.navbar {
+    overflow: hidden;
+    background: var(--bg-primary);
+    position: absolute;
+    transition: width 140ms ease;
+    z-index:100;
 }
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-</style>
-</head>
-<body>
-<div class="row">
-  <div class="columns">
-
-
-
-
-
-
-
-<iframe width="100%" height="400" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/628336239&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-
-
-
-
-
-
-
-<style>
-</style>
-
-  </div>
-  <div class="columns">
-
-
-<iframe width="100%" height="400" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/577708581&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-
-  </div>
-  <div class="columns" >
-
-
-<iframe width="100%" height="400" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/567289230&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-
-  </div>
-</div>
-
-</body>
-</html>
-
-
-        </div>
-      </div>
-    </div>
-
-          </div>
-        </div>
-      </div>
-
-
-            <h2>Previous Collaborations</h2>
-            <div class="heading-line"></div>
-          </div>
-        </div>
-      </div>
-
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
+.navbar-fixed {
+    position: fixed;
 }
 
-/* Create two equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 50%;
-  padding: 10px;
+.navbar-nav {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    align-items: center;
+    height:100%;
 }
 
-.center {
-  margin: auto;
-  width: 75%;
-  padding: 10px;
+.nav-item {
+    width: 100%;
+    background: var(--bg-primary);
 }
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+.active-nav svg {
+    color: var(--accent);
+    transition: color 0.3s
 }
-</style>
-</head>
-<body>
-
-<style>  
-img.one {
-  height: 100%;
-  width: 100%;
+.nav-item:hover svg {
+    color: var(--accent);
+    transition: color 0.3s
 }
-  </style>
-  
-<div class="center">
-  <div class="column">
-<img class="one" src="img/collab/match.png" width="555" height="312" alt="Match Solitaire">
-  </div>
-  <div class="column">
-    <h2>Hot Chai Productions' Match Solitaire™</h2>
-    <p style="color:#e0e0e0";>    Solitaire Meets It's Match!
-
-Match Solitaire retains the spirit of the beloved Solitaire genre and takes it to the next level with a newly imagined matching twist.
-
-The entire soundtrack of Match Solitaire was written by me over the course of a month or two. This includes the opening theme, the daily challenge theme, and both introduction and victory themes for a wide cast of adorable characters. This also includes the work-in-progress soundtrack, which will feature a few full bonus songs of character's individual themes.
-          </p>
-  </div>
-</body>
-</html>
-</div>
-</div>
-</div>
-<p style="color:#181818";><br/></p>
-<h2 style="color:#181818";><br/><br/><br/><br/><br/><br/><br/></h2>
-</section>
 
 
 
+.nav-link {
+    display:flex;
+    align-items: center;
+    height: 5rem;
+    color: var(--text-primary);
+    text-decoration: none;
+    transition: 0.1s;
+}
+
+
+.active-nav {
+    background: var(--bg-third);
+}
+.nav-item:hover {
+    background: var(--bg-secondary);
+}
+.active-nav > .nav-link {
+    color: var(--text-secondary);
+}
+
+.nav-link:hover {
+    color: var(--text-secondary);
+}
+
+.link-text {
+    display:inline-block;
+    position: relative;
+    display: none;
+    margin-left: 0.7rem;
+}
+
+.underline-hover::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 2px;
+    width: 0%;
+    background: var(--accent);
+    transition: width 0.3s;
+}
+
+.active-nav > a > .link-text::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 2px;
+    width: 100%;
+    background: var(--accent);
+    transition: width 0.3s;
+}
+
+.nav-link svg {
+    max-width: 2rem;
+    min-width: 1rem;
+    margin: 0 var(--icon-margin);
+}
+
+.logo {
+    background: var(--bg-secondary);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.2ch;
+    margin-bottom: 1rem;
+    width: 100%;
+}
 
 
 
-  <!-- Parallax 2 -->
-  <section id="parallax2" class="home-section parallax" data-stellar-background-ratio="0.5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <ul class="clients">
-            <div class="section-heading">
-              <h2>COMMUNITY</h2>
-            </div>
-            <p class="lead wow bounceInUp" data-wow-delay="1s">I like to have transparency with the quality of my work. As such, I encourage my past clients to leave an honest review of their experiences with my services, for the sake of new and returning patrons alike.</p>
-            <div class="powr-reviews" id="3efdd10c_1585548036"></div>
-            <script src="https://www.powr.io/powr.js?platform=html"></script>
 
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
+/* CONTENT */
+main {
 
-  <!-- Contact -->
-  <section id="contact" class="home-section bg-white" style="background-color:#181818;">
-    <div class="container">
-      <head>
-<style>
-          .column2 {
-            float: left;
-            width: 50%;
-            padding: 50px;
-          }
+    margin: 0;
+    padding: 0;
+}
 
-          .center2 {
-            margin: auto;
-            width: 100%;
-            padding: 10px;
-          }
+.home-section {
+    padding: 0;
+    margin: 0;
 
-          /* Clear floats after the columns */
-          .row:after {
-            content: "";
-            display: table;
-            clear: both;
-          }
-          </style>
-          </head>
-          <body>
+    
+    height:100vh;
+    width:100vw;
+}
+.projects-section {
+    padding: 0;
+    margin: 0;
+    position:relative;
+
+    height:100vh;
+    width:100vw;
+}
 
 
+.main-header {
+    font-size: clamp(1.7rem, 4rem, 9vw);
+    font-weight: 400;
+    color: var(--text-primary);
+}
+.sub-title {
+    font-size: clamp(1.3rem, 2rem, 6vw);;
+    color: var(--text-primary);
+}
 
-          <div class="center2">
-            <div class="column2">
-              <div class="section-heading">
-              <h2>Contact Me</h2>
-              <div class="heading-line"></div>
-              </div>
-              <p>After you submit your request, I'll respond as soon as possible with a general pricing range. You can usually expect a response within 24 hours or less (I'm  based on JST). Try to be as descriptive as possible, every detail helps!<br/><br/></p>
-            <form action="https://formspree.io/xleppyzl" method="POST">
-                <div class="form-group">
-                  <input width="500" type="text" name="name" class="form-control" id="name" placeholder="Name" data-rule="minlen:4"
-                    data-msg="Please enter at least 4 chars" />
-                  <div class="validation"></div>
-                </div>
-                <div class="form-group">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Email" data-rule="email"
-                    data-msg="Please enter a valid email" />
-                  <div class="validation"></div>
-                </div>
+.nav-style {
+    background: var(--bg-secondary);
+    border: transparent;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: var(--text-primary);
+    transition: 0.5s;
+}
 
-                <div class="form-group">
-                  <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Describe Song (Ideal Length, Genre, Style, etc.)"
-                    placeholder="Describe Song (Ideal Length, Genre, Style, etc.)"></textarea>
-                  <div class="validation"></div>
-                </div>
-              <div class="form-group">
-                <div class="col-md-offset-2 col-md-8">
-                  <button type="submit" class="btn btn-theme btn-lg btn-block" name="submit">Send</button>
-                </div>
-              </div>
-            </form>
-<h2 style="color:#181818";><br/><br/><br/></h2>
-            <img src="img/logos/Starlotte Music Logo No Background Black.png" width="400" height="248" alt="Starlotte Music Logo">
-            </div>
-            <div class="column2">
-              <div class="section-heading">
-              <h2>Pricing Guide</h2>
-              <div class="heading-line"></div>
-              </div>
-<h3>Full Songs - Starts at $29.99</h3>
 
-<p style="color:#e0e0e0" align="left";>- Instrumental only<br/>
-- Can write backing for lyrics/singing, cannot write lyrics<br/>
-- Can score animation/video<br/>
-- Songs can be original or remixes of existing<br/>
-<br/>
-$29.99 for first minute<br/>
-$19.99 every additional minute<br/>
-1 free revision from final, $5 per following</p>
+.nav-style:hover {
+    background: var(--bg-primary);
+}
 
-<h3>Advertisements - $24.99</h3>
 
-<p style="color:#e0e0e0" align="left";>- Perfect for advertisements, logos, slogans<br/>
-- Simple, catchy melodies so your product sticks<br/>
-- Can include vocals, however they must already be written/recorded.<br/>
-- Can score alongside video<br/>
-<br/>
-$24.99 for a max of 30 seconds</br>
-2 free revisions from final, $5 per following</p>
+.underline-hover {
+    position: relative;
+}
 
-<h3>Ringtones - $19.99</h3>
+.button {
+    font-size: 1.3rem;
+    margin: 0;
+}
+.button > svg {
+    height: 1.5rem;
+    width: 1.5rem;
+    vertical-align: center;
+    position: relative;
+    top: 0.3em;
+    margin: 0;
+    padding: 0;
+}
 
-<p style="color:#e0e0e0" align="left";>- Custom ringtones<br/>
-- Instrumental only<br/>
-- Ringtones can be original, remixes, covers, etc.<br/>
-- Optional custom matching text tone<br/>
-<br/>
-$19.99 for a max of 30 seconds<br/>
-2 free revisions from final, $5 per following</br>
-Can add matching text tone for $2.50</p>
-            </div>
-          </body>
-          </html>
-          </div>
-          </div>
-          </div>
-        </section>
+.nav-style:hover .svg-hover-accent {
+    color: var(--accent);
+}
 
-          <p>Copyright &copy; Starlotte Music. All rights reserved.</p>
-  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-  <!-- js -->
-  <script src="js/jquery.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/wow.min.js"></script>
-  <script src="js/jquery.scrollTo.min.js"></script>
-  <script src="js/jquery.nav.js"></script>
-  <script src="js/modernizr.custom.js"></script>
-  <script src="js/grid.js"></script>
-  <script src="js/stellar.js"></script>
-  <!-- Template Custom Javascript File -->
-  <script src="js/custom.js"></script>
-</body>
-</html>
+.svg-hover-accent {
+    transition: color 0.3s;
+}
+.svg-hover-accent:hover {
+    color: var(--accent);
+}
+
+.learn-more-button {
+    margin-top:10px;
+    
+}
+
+.name {
+    background-color: transparent;
+    color: var(--accent);
+    font-weight: 500;
+}
+
+#typewriter {
+    background-color: transparent;
+    position: relative;
+    color: var(--accent)
+}
+
+#typewriter::after {
+    content: '';
+    background-color: var(--accent-duller);
+    position: absolute;
+    right:-2px;;
+    top:0.4rem;
+    bottom:4px;
+    width: 2px;
+    animation: blinkingText 1.2s infinite;
+
+}
+
+
+@keyframes blinkingText{
+    0%{     opacity: 1;    }
+    49%{    opacity: 1; }
+    60%{    opacity: 0; }
+    99%{    opacity: 0;  }
+    100%{   opacity: 1;    }
+}
+
+.home-center-container {
+    opacity: -webkit-calc((450 - var(--main-scrollTop)) / 500);
+    /* background-color: hsl(0, 56%, 55%); */
+}
+
+.dimmer {
+    content: '';
+    position:absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: -5px;
+    background-color: var(--bg-primary);
+    opacity: -webkit-calc((var(--main-scrollTop)) / 400);
+    /* background-color: hsl(0, 56%, 55%); */
+}
+
+
+/* Project page */
+
+.projects-outer {
+    width: 100%;
+    height: 100%;
+    padding-left: 5%;
+    padding-top: 5rem;
+}
+
+.slide-in-title {
+    opacity: 0;
+    font-size: clamp(1.3rem, 2rem, 6vw);;
+    color: var(--text-primary);
+    transform: translate(-20%, 0%);
+    transition: all 0.3s;
+    width: 90%;
+    height: 3rem;
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    border-bottom: 2px;
+    border-style: dashed;
+    border-color: var(--bg-secondary);
+}
+
+
+.slide-in {
+    opacity: 1;
+    transform: translate(0%, 0%)
+}
+
+/* Project container */
+.projects-container {
+    overflow: auto;
+    padding:10px;
+    list-style: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 85%;
+    height: 75%;
+}
+
+
+/* #region Cards */
+
+.card {
+    float: left;
+    display: inline-block;
+    margin:10px;
+    width: 260px;
+    height: 340px;
+    background-color:#1B1B1B;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+    position: relative;
+
+    -webkit-box-shadow: 0 0 var(--card-shadow-size) 2px var(--card-shadow-color);
+    -moz-box-shadow: 0 0 var(--card-shadow-size) 2px var(--card-shadow-color);
+    box-shadow: 0 0 var(--card-shadow-size) 2px var(--card-shadow-color);
+}
+
+.card:hover {
+    transform: scale(1.05);
+
+}
+
+.card-image {
+    position: relative;
+    border-radius: 10px 10px 0px 0px;
+    width: 100%;
+    filter: contrast(0.90) brightness(0.85);
+    /* aspect-ratio: 16/98; */
+}
+
+.card::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.0);
+    transition: background-color 0.3s;
+}
+
+
+.card:hover::after {
+    /* content: 'Click to visit'; */
+    content: var(--text, 'Click to visit');
+    display: flex;
+    padding-top: 50px;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 10px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--text-primary);
+
+}
+
+
+.card-divider {
+    border: none;
+    border-top: 2px solid;
+    border-color: var(--bg-secondary);
+    width:95%;
+    margin-left:2.5%;
+}
+
+.card-contents {
+    width: 90%;
+    padding: 10px;
+    position: relative;
+
+}
+
+.card-a {
+    text-decoration: none;
+}
+
+.card-title {
+
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+.card-description {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: var(--text-primary);
+}
+
+.card-tags {
+    position:absolute;
+    bottom:10px;
+    left: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.card-tag {
+    font-size: 1.05rem;
+    font-weight: lighter;
+    color: var(--text-secondary);
+    background-color: var(--card-tag-color);
+    filter: saturate(80%);
+    border-radius: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-right:5px;
+}
+/* #endregion */
+
+/* #region Experience */
+
+.experience-container {
+    overflow: auto;
+    padding:7px;
+    list-style: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    width: 85%;
+    height: 75%;
+}
+
+.experience-section {
+    padding: 0;
+    margin: 0;
+    position:relative;
+
+    height:100vh;
+    width:100vw;
+}
+
+
+.experience-card {
+    float: left;
+    display: inline-block;
+
+    vertical-align: top;
+    display: flex;
+    flex-direction: row;
+    margin:10px;
+
+    min-width: 200px;
+    max-width: 30%;
+    height: 120px;
+    background-color:#1B1B1B;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+    position: relative;
+
+    -webkit-box-shadow: 0 0 var(--card-shadow-size) 2px var(--card-shadow-color);
+    -moz-box-shadow: 0 0 var(--card-shadow-size) 2px var(--card-shadow-color);
+    box-shadow: 0 0 var(--card-shadow-size) 2px var(--card-shadow-color);
+}
+
+.experience-card-image {
+    background-color: #222222;
+    height: 100%;
+    filter: brightness(0.8)
+}
+
+.experience-card-title {
+
+    font-size: clamp(0.8rem, 1.4rem, 4.5vw);
+    font-weight: 600;
+    color: var(--text-primary);
+}
+.experience-card-description {
+    font-size: clamp(0.3rem, 1.1rem, 3.4vw);;
+    font-weight: 400;
+    color: var(--text-primary);
+}
+
+.experience-card-contents {
+    margin-left: 8px;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
+/* #endregion Experience */
+
+
+/* #region Contact */
+.contact-section {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    height:100vh;
+    width:100vw;
+}
+
+
+.social-left {
+    font-size: clamp(0.6rem, 0.9rem, 3.1vw);
+    display: inline-block;
+    background: var(--bg-third);
+    height: 100%;
+    width: clamp(130px, 5%, 20%);
+    margin-right:0px;
+    border-radius: 10px 0px 0px 10px;
+}
+
+
+.social-left:hover {
+    background: var(--bg-third);
+}
+
+.social-right {
+    font-size: clamp(0.6rem, 0.8rem, 3vw);
+    margin-left:0px;
+    display: inline-block;
+    background: var(--bg-primary);
+    height: 100%;
+    width: clamp(120px, 15rem, 27%);
+    border-radius: 0px 10px 10px 0px;
+
+}
+
+.social-hr {
+    width: 10%;
+    margin-top: 7px;
+    margin-bottom: 7px;
+
+    border: none;
+    border-top: 2px solid;
+    border-color: var(--bg-primary);
+    
+}
+/* #endregion */
+
+
+/* Only computers */
+@media only screen and (min-width: 1000px) {
+    .projects-outer {
+        padding-top: 6rem;
+    }
+    
+    .nav-link svg {
+        margin: 0;
+    }
+    
+    .home-center-container, .contact-center-container {
+        margin:auto;
+
+        width:100%;
+        height:25%;
+        position:absolute;
+        top:0;
+        bottom:0;
+        left:0;
+        right:0;
+        /* background: hsl(0, 51%, 42%); */
+        text-align: center;
+    }
+    
+    /* .navbar {
+        right:0;
+        top:0;
+        width: 5rem;
+        height: 100vh;
+    } */
+    .navbar {
+        /* right:0%; */
+        /* transform: translateX(-25%); */
+        top:0;
+        width: 100%;
+        height: 5rem;
+    }
+    /* .navbar:hover {
+        width: var(--navbar-hovered-width);
+    } */
+
+    .nav-item:hover .underline-hover::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -1px;
+        height: 2px;
+        width: 100%;
+        background: var(--accent);
+        transition: width 0.3s;
+    }
+
+
+
+    .underline-hover:hover::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -1px;
+        height: 2px;
+        width: 100%;
+        background: var(--accent);
+        transition: width 0.3s;
+    }
+    .navbar-nav {
+        flex-direction: row;
+        align-items: center;
+    }
+
+
+    .logo {
+        display: none;
+    }
+
+
+
+    .navbar:hover .link-text {
+        display: block;
+    }
+
+    .nav-item:last-child {
+        margin-top: auto;
+    }
+
+    .nav-link {
+        justify-content: center;
+    }
+
+    .link-text {
+        display: block;
+    }
+}
+
+/* Only mobile devices/tall devices */
+@media only screen and (max-width:  1000px) {
+    .experience-container {
+        flex-direction: column;
+    }
+    .projects-container {
+        padding:8px;
+    }
+    .card {
+        width: 95%;
+    }    
+    .experience-card {
+        max-width: 95%;
+        height: 100px;
+    }    
+    .home-center-container, .contact-center-container {
+        margin:auto;
+
+        width:100%;
+        height:30%;
+        position:absolute;
+        top:0;
+        bottom:0;
+        left:0;
+        right:0;
+        text-align: center;
+    }
+
+
+    
+
+    .navbar {
+        top:-1px;
+        width:100vw;
+        height: 4rem;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .navbar-nav {
+        flex-direction: row;
+    }
+
+    .nav-link {
+        justify-content: center;
+    }
+
+}
