@@ -210,6 +210,7 @@ main {
 
 
 .main-header {
+    font-family: seaford;
     font-size: clamp(1.7rem, 4rem, 9vw);
     font-weight: 400;
     color: var(--text-primary);
