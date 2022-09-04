@@ -31,6 +31,15 @@
     font-family: seaford;
     src: url(fonts/seaford.woff);
 }
+img#bg-graphic{
+  height: 100vh;
+  width: auto;
+  visibility: visible;
+}
+@media only screen and (max-width: 1000px) {
+    img#bg-graphic{visibility: hidden}
+    }
+  }
     </style>
     <body scroll="no">
         <!-- #Navbar -->
@@ -39,8 +48,10 @@
         <main scroll="no">
             <div class="dimmer"></div>
             <div class="home-section" id="home">
+              <div class="bg-graphic">
+              <img id="bg-graphic" src="img/piano.png">
+              </div>
                 <div class="home-center-container">
-                  <img src="img/piano.png">
                     <h1 class="main-header">Hi, I’m <mark class="list">Star</mark>!</h1>
                     <p class="sub-title">I took over Ryan's website lol</h1>
                         <div>
@@ -93,7 +104,7 @@
 
                 <!-- #region panels -->
                 <div class="projects-outer">
-                    <h1 class="projects-header slide-in-" id="slide-in-header-projects">Projects</h1>
+                    <h1 class="projects-header slide-in-title slide-in" id="slide-in-header-projects">Projects</h1>
                     <div class="projects-container">
 
                         <!-- TurtleDash -->

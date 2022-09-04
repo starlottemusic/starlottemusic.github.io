@@ -25,7 +25,7 @@
     --home-bg-secondary: hsl(240, 6%, 12%);
 
     --card-shadow-color: #161616;
-    --card-shadow-size: 12px;    
+    --card-shadow-size: 12px;
     /* scroll-behavior: smooth; */
 }
 
@@ -48,7 +48,7 @@ body::-webkit-scrollbar-thumb {
 }
 body {
     touch-action: none;
-    
+
     color: black;
     background: black;
     background-color: var(--home-bg-secondary);
@@ -195,7 +195,7 @@ main {
     padding: 0;
     margin: 0;
 
-    
+
     height:100vh;
     width:100vw;
 }
@@ -211,7 +211,7 @@ main {
 
 .main-header {
     font-family: seaford;
-    font-size: clamp(1.7rem, 4rem, 9vw);
+    font-size: clamp(1.7rem, 5rem, 9vw);
     font-weight: 400;
     color: var(--text-primary);
 }
@@ -267,7 +267,7 @@ main {
 
 .learn-more-button {
     margin-top:10px;
-    
+
 }
 
 .list {
@@ -578,7 +578,7 @@ main {
     border: none;
     border-top: 2px solid;
     border-color: var(--bg-primary);
-    
+
 }
 /* #endregion */
 
@@ -588,25 +588,25 @@ main {
     .projects-outer {
         padding-top: 6rem;
     }
-    
+
     .nav-link svg {
         margin: 0;
     }
-    
+
     .home-center-container, .contact-center-container {
         margin:auto;
 
-        width:20%;
+        width:25%;
         height:25%;
         position:absolute;
         top:0;
         bottom:0;
-        left:0;
+        left:30%;
         right:0;
         /* background: hsl(0, 51%, 42%); */
         text-align: center;
     }
-    
+
     /* .navbar {
         right:0;
         top:0;
@@ -686,11 +686,11 @@ main {
     }
     .card {
         width: 95%;
-    }    
+    }
     .experience-card {
         max-width: 95%;
         height: 100px;
-    }    
+    }
     .home-center-container, .contact-center-container {
         margin:auto;
 
@@ -705,7 +705,7 @@ main {
     }
 
 
-    
+
 
     .navbar {
         top:-1px;
