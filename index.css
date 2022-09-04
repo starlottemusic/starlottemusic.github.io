@@ -1,12 +1,6 @@
 :root {
-
-    @font-face {
-      font-family: segoe;
-      src: url(fonts/segoe_light.woff);
-    }
-
     font-size: 16px;
-    font-family: segoe;
+    font-family: 'Open Sans';
 
     --bg-primary: rgba(41, 38, 49, 0.4);
     --bg-secondary: rgba(20, 20, 24, 0.5);
