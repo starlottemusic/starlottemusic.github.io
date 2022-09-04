@@ -596,7 +596,7 @@ main {
     .home-center-container, .contact-center-container {
         margin:auto;
 
-        width:100%;
+        width:20%;
         height:25%;
         position:absolute;
         top:0;
