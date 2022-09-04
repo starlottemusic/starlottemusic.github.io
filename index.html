@@ -27,6 +27,10 @@
   font-family: segoe_light;
   src: url(fonts/segoe_light.woff);
 }
+@font-face {
+font-family: segoe_bold;
+src: url(fonts/segoe_bold.woff);
+}
   @font-face {
     font-family: seaford;
     src: url(fonts/seaford.woff);
@@ -52,17 +56,34 @@ img#bg-graphic{
               <img id="bg-graphic" src="img/piano.png">
               </div>
                 <div class="home-center-container">
-                    <h1 class="main-header">Hi, I’m <mark class="list">Star</mark>!</h1>
-                    <p class="sub-title">I took over Ryan's website lol</h1>
+                    <h1 class="main-header">Hi, I’m Star!</h1>
+                    <div>
+                  <img class="text-img" src="img/text.png">
+                    </div>
+                    <p class="sub-title">I'm a</mark>
+                      <mark class="list">Composer</mark></h1>
+                      <p class="subtitle-list">Producer</mark></h1>
+                      <p class="subtitle-list-2">SFX Artist</mark></h1>
                         <div>
-                            <a href="#projects">
-                                <button class="nav-style button learn-more-button" id="lmbt" href="#projects" onclick='switchTo("projects");''>
-                                    <span class="underline-hover">My Work</span>
-                                    <svg class="svg-hover-accent" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-arrow-down fa-w-14 fa-9x"><path fill="currentColor" d="M413.1 222.5l22.2 22.2c9.4 9.4 9.4 24.6 0 33.9L241 473c-9.4 9.4-24.6 9.4-33.9 0L12.7 278.6c-9.4-9.4-9.4-24.6 0-33.9l22.2-22.2c9.5-9.5 25-9.3 34.3.4L184 343.4V56c0-13.3 10.7-24 24-24h32c13.3 0 24 10.7 24 24v287.4l114.8-120.5c9.3-9.8 24.8-10 34.3-.4z" class=""></path></svg>
-                                </button>
-                            </a>
+                      <img class="home-lines" src="img/lines.png">
                         </div>
                     </div>
+                    <div class="learn-more-button-1">
+                    <a href="#projects">
+                        <button class="nav-style button learn-more-button" id="lmbt" href="#projects" onclick='switchTo("projects");''>
+                            <span class="underline-hover">My Work </span>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill="currentColor"><path d="M21.3 5.8L9.2 2.4c-.6-.2-1.2.2-1.2.9v12.1c-.6-.2-1.3-.4-2-.4-2.2 0-4 1.3-4 3s1.8 3 4 3 4-1.3 4-3v-7.2c0-.6.6-1.1 1.2-.9l8.1 2.3c.4.1.7.5.7.9v4.3c-.6-.3-1.3-.4-2-.4-2.2 0-4 1.3-4 3s1.8 3 4 3 4-1.3 4-3V6.7c0-.4-.3-.8-.7-.9zm-2.5 4.3l-8.1-2.3c-.4-.1-.7-.5-.7-1 0-.6.6-1.1 1.2-.9l8.1 2.3c.4.1.7.5.7 1 0 .6-.6 1.1-1.2.9z"></path></g></svg>
+                        </button>
+                        <div>
+                        <div class="learn-more-button-2">
+                            <a href="#contact">
+                                <button class="nav-style button learn-more-button" id="lmbt" href="#contact" onclick='switchTo("contact");''>
+                                    <span class="underline-hover">Get in Touch </span>
+                                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="envelope" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-envelope fa-w-16 fa-7x"><path fill="currentColor" d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z" class=""></path></svg>
+                                </button>
+                    </a>
+                  </div>
+                </div>
             </div>
 
             <div class="projects-section" id="projects">
@@ -72,7 +93,7 @@ img#bg-graphic{
                         <li class="logo">
                             <a href="#home" onclick="switchTo('home')" class="nav-link">
                                 <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="code" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="svg-inline--fa fa-code fa-w-20 fa-7x"><path fill="currentColor" d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z" class=""></path></svg>
-                                <span class="link-text underline-hover">RyanHCode</span>
+                                <span class="link-text underline-hover">Starlotte</span>
                             </a>
                         </li>
                         <li class="nav-item" id="nav-item-home">
@@ -84,7 +105,8 @@ img#bg-graphic{
 
                         <li class="nav-item" id="nav-item-projects">
                             <a href="#projects" onclick="switchTo('projects')" class="nav-link">
-                                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="file" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="svg-inline--fa fa-file fa-w-12 fa-7x"><path fill="currentColor" d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm160-14.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z" class=""></path></svg>                        <span class="link-text underline-hover">Portfolio</span>
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill="currentColor"><path d="M21.3 5.8L9.2 2.4c-.6-.2-1.2.2-1.2.9v12.1c-.6-.2-1.3-.4-2-.4-2.2 0-4 1.3-4 3s1.8 3 4 3 4-1.3 4-3v-7.2c0-.6.6-1.1 1.2-.9l8.1 2.3c.4.1.7.5.7.9v4.3c-.6-.3-1.3-.4-2-.4-2.2 0-4 1.3-4 3s1.8 3 4 3 4-1.3 4-3V6.7c0-.4-.3-.8-.7-.9zm-2.5 4.3l-8.1-2.3c-.4-.1-.7-.5-.7-1 0-.6.6-1.1 1.2-.9l8.1 2.3c.4.1.7.5.7 1 0 .6-.6 1.1-1.2.9z"></path></g></svg>
+                        <span class="link-text underline-hover">Portfolio</span>
                             </a>
                         </li>
 
@@ -254,28 +276,51 @@ img#bg-graphic{
             </div>
 
             <div class="contact-section" id="contact">
+              <div class="bg-graphic">
+              <img id="bg-graphic" src="img/guitar.png">
+              </div>
                 <div class="contact-center-container">
-                    <h1 class="main-header">Contact Me</h1>
+                    <h1 class="main-header">Get in touch!</h1>
                         <center>
+                            <a href="https://discord.com/channels/@me" target="_blank" class="card-a">
                             <div class="nav-style social-left">
                                 Discord
                             </div>
                             <div class="nav-style social-right">
-                                RyanHCode#1268
+                              Starlotte#3589
                             </div>
-
+                          </a>
                             <hr class="social-hr">
-
-                            <a href="https://github.com/ryanhcode/" target="_blank" class="card-a">
-
+                            <a href="mailto:starlottemusic@gmail.com" target="_blank" class="card-a">
                             <div class="nav-style social-left">
-                                Github
+                                Email
                             </div>
                             <div class="nav-style social-right">
-                                ryanhcode
+                                starlottemusic@gmail.com
                             </div>
                             </a>
-
+                            <div>
+                            <div class="nav-style social-left">
+                                Other
+                            </div>
+                            <div class="form-nav-style form-right">
+                            <form action="https://formspree.io/xleppyzl" method="POST">
+                                <div class="form-group">
+                                  <input width="500" type="text" name="username" class="form-input" id="username" placeholder="Username" data-rule="minlen:1"
+                                    data-msg="This is a required field." />
+                                  <div class="validation"></div>
+                                </div>
+                                <div class="form-group">
+                                  <input width="500" type="text" name="platform" class="form-input" id="platform" placeholder="Platform" data-rule="minlen:4"
+                                    data-msg="Please enter at least 4 chars" />
+                                </div>
+                                </div>
+                              </div>
+                              <div>
+                            <p class="form-subtitle">If the above contacts don't work for you, please submit your preferred method of communication here. I'll do my best to reach out within 24 hours.</h1>
+                            <button class="form-submit" type="submit">Submit</button>
+                          </div>
+                            </form>
                         </center>
                     </div>
             </div>

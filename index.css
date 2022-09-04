@@ -2,15 +2,17 @@
     font-size: 16px;
     font-family: segoe_light;
 
-    --bg-primary: rgba(41, 38, 49, 0.4);
-    --bg-secondary: rgba(20, 20, 24, 0.5);
-    --bg-third: rgba(17, 17, 20, 0.8);
+    --bg-primary: rgba(32, 32, 40, 0.4);
+    --bg-secondary: rgba(36, 36, 52, 0.6);
+    --bg-third: rgba(46, 47, 66, 0.6);
 
     --text-primary: #b8b8b8;
     --text-secondary: #ececec;
 
     --accent: #a295b1;
-    --accent-duller: #bd2d10;
+    --accent-transparent: rgba(137, 102, 138, 0.6);
+    --accent-duller: #89668A;
+    --accent-dullest: #7A597C;
     --scroll-bg: rgb(40, 34, 54);
 
     --icon-color:
@@ -191,6 +193,57 @@ main {
     padding: 0;
 }
 
+.form-input {
+  font-family: segoe_light;
+  position: relative;
+  bottom: -12px;
+  left: -17px;
+  width: 118%;
+  padding: 3px 12px;
+  border-radius: 5px;
+  display: inline-block;
+  border: 1px solid #1a052e;
+  border-radius: 3px;
+  box-sizing: border-box;
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+}
+
+.form-submit {
+  font-family: segoe_bold;
+  width: 40%;
+  background-color: var(--accent-duller);
+  color: white;
+  padding: 10px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  position:relative;
+  bottom:-5px;
+}
+
+.form-submit:hover {
+  background-color: var(--accent-dullest);
+}
+
+.form-subtitle {
+    position:relative;
+    bottom:-8px;
+    font-size: clamp(0.3rem, 0.8rem, 6vw);
+    width: 55%;
+    color: var(--text-primary);
+}
+
+.home-lines {
+    position: relative;
+    top: -135px;
+    left: -35px;
+    right: 0;
+    height:90px;
+    width:auto;
+}
+
 .home-section {
     padding: 0;
     margin: 0;
@@ -216,11 +269,40 @@ main {
     color: var(--text-primary);
 }
 .sub-title {
-    font-size: clamp(1.3rem, 2rem, 6vw);;
+    font-size: clamp(1.3rem, 3rem, 6vw);
+    position: relative;
+    bottom: 20px;
+    left: 40px;
     color: var(--text-primary);
 }
 
+.subtitle-list {
+    position: relative;
+    left: 82px;
+    bottom: 25px;
+    font-size: clamp(1.3rem, 3rem, 6vw);
+    color: var(--accent);
+}
+
+.subtitle-list-2 {
+    position: relative;
+    left: 89px;
+    bottom: 30px;
+    font-size: clamp(1.3rem, 3rem, 6vw);
+    color: var(--accent);
+}
+
 .nav-style {
+    background: var(--accent-transparent);
+    border: transparent;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: var(--text-primary);
+    transition: 0.5s;
+}
+
+.form-nav-style {
     background: var(--bg-secondary);
     border: transparent;
     padding: 15px;
@@ -230,9 +312,8 @@ main {
     transition: 0.5s;
 }
 
-
 .nav-style:hover {
-    background: var(--bg-primary);
+    background: var(--bg-third);
 }
 
 
@@ -267,7 +348,19 @@ main {
 
 .learn-more-button {
     margin-top:10px;
+}
 
+.learn-more-button-1 {
+    position: absolute;
+    bottom: 100px;
+    right: 25px;
+}
+
+.learn-more-button-2 {
+    position: absolute;
+    bottom: -75px;
+    right: -40px;
+    width: 150%;
 }
 
 .list {
@@ -545,7 +638,7 @@ main {
 
 
 .social-left {
-    font-size: clamp(0.6rem, 0.9rem, 3.1vw);
+    font-size: clamp(0.6rem, 1rem, 3.1vw);
     display: inline-block;
     background: var(--bg-third);
     height: 100%;
@@ -560,14 +653,23 @@ main {
 }
 
 .social-right {
-    font-size: clamp(0.6rem, 0.8rem, 3vw);
+    font-size: clamp(0.6rem, 1rem, 3vw);
     margin-left:0px;
     display: inline-block;
-    background: var(--bg-primary);
+    background: var(--bg-secondary);
     height: 100%;
     width: clamp(120px, 15rem, 27%);
     border-radius: 0px 10px 10px 0px;
 
+}
+
+.form-right {
+    font-size: clamp(0.6rem, 0.8rem, 3vw);
+    margin-top:-12px;
+    display: inline-block;
+    background: none;
+    width: clamp(120px, 15rem, 27%);
+    border-radius: 0px 10px 10px 0px;
 }
 
 .social-hr {
@@ -596,7 +698,7 @@ main {
     .home-center-container, .contact-center-container {
         margin:auto;
 
-        width:25%;
+        width:40%;
         height:25%;
         position:absolute;
         top:0;
@@ -671,8 +773,15 @@ main {
         justify-content: center;
     }
 
+    .text-img {
+          position: absolute;
+          visibility:hidden;
+    }
+
     .link-text {
         display: block;
+
+
     }
 }
 
@@ -704,8 +813,37 @@ main {
         text-align: center;
     }
 
+    .sub-title {
+      position: relative;
+      visibility:hidden;
+    }
 
+    .subtitle-list {
+      position: relative;
+      visibility:hidden;
+    }
 
+    .subtitle-list-2 {
+        position: relative;
+        visibility:hidden;
+    }
+
+    .home-lines {
+          position: relative;
+          visibility:hidden;
+    }
+
+    .text-img {
+          position: relative;
+          top: 0;
+          left: 0;
+          right: 0;
+          object-fit: contain;
+          max-height:175px;
+          height: 20vw;
+          width:auto;
+          visibility:visible;
+    }
 
     .navbar {
         top:-1px;
