@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" data-scrollery=main>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimum-scale=1.0">
+        <link rel="stylesheet" href="index.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet"/>
+        <script src="scrollery.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="smooth-scroll.min.js"></script>
+        <script defer src="index.js"></script>
+
+        <title>Starlotte's Music</title>
+        <meta name="title" content="starlottemusic.github.io">
+        <meta name="description" content="Starlotte's Music Portfolio">
+        <meta name="keywords" content="star, starlotte, starlottemusic">
+        <meta name="robots" content="index, follow">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="language" content="English">
+        <meta name="author" content="Starlotte & RyanHCode">
+        <link rel="shortcut icon" type="image/jpg" href="favicon.ico"/>
+
+    </head>
+    <style>
+    @font-face {
+  font-family: segoe_light;
+  src: url(fonts/segoe_light.woff);
+}
+@font-face {
+font-family: segoe_bold;
+src: url(fonts/segoe_bold.woff);
+}
+  @font-face {
+    font-family: seaford;
+    src: url(fonts/seaford.woff);
+}
+img#bg-graphic{
+  height: 100vh;
+  width: auto;
+  visibility: visible;
+}
+@media only screen and (max-width: 1000px) {
+    img#bg-graphic{visibility: hidden}
+    }
+  }
+    </style>
+    <body scroll="no">
+        <!-- #Navbar -->
+
+
+        <main scroll="no">
+            <div class="dimmer"></div>
+            <div class="home-section" id="home">
+              <div class="bg-graphic">
+              <img id="bg-graphic" src="img/piano.png">
+              </div>
+                <div class="home-center-container">
+                  <p class="sub-title" id="demo"></p>
+
+                  <script>
+                  // Set the date we're counting down to
+                  var countDownDate = new Date("Sep 5, 2022 22:00:00").getTime();
+
+                  // Update the count down every 1 second
+                  var x = setInterval(function() {
+
+                    // Get today's date and time
+                    var now = new Date().getTime();
+
+                    // Find the distance between now and the count down date
+                    var distance = countDownDate - now;
+
+                    // Time calculations for days, hours, minutes and seconds
+                    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                    // Output the result in an element with id="demo"
+                    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+                    + minutes + "m " + seconds + "s ";
+
+                    // If the count down is over, write some text
+                    if (distance < 0) {
+                      clearInterval(x);
+                      document.getElementById("demo").innerHTML = "You can say is now lol";
+                    }
+                  }, 1000);
+                  </script>
+                  </div>
+                </div>
+            </div>
+
+
+            <!-- #endregion experience -->
+        </main>
+    </body>
+</html>
