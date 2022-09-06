@@ -2,7 +2,7 @@ function scCheck(){
   if ($(document).scrollTop() >= $(window).height()-4) {
     $('.navbar').addClass('navbar-fixed')
     $('#slide-in-header-projects').addClass('slide-in')
-    
+
 } else {
     $('.navbar').removeClass('navbar-fixed')
     $('#slide-in-header-projects').removeClass('slide-in')
@@ -10,17 +10,17 @@ function scCheck(){
 }
 
 if ($(document).scrollTop() >= $(window).height()*2-4) {
-  $('#slide-in-header-experience').addClass('slide-in')
-  
+  $('#slide-in-header-contact').addClass('slide-in')
+
 } else {
-  $('#slide-in-header-experience').removeClass('slide-in')
+  $('#slide-in-header-contact').removeClass('slide-in')
 
 }
 }
 $(document).on('scroll',function(){
     scCheck();
 
- 
+
 });
 
 var texts = ["game", "backend", "software"]
@@ -104,7 +104,7 @@ function preventDefaultForScrollKeys(e) {
 var supportsPassive = false;
 try {
   window.addEventListener("test", null, Object.defineProperty({}, 'passive', {
-    get: function () { supportsPassive = true; } 
+    get: function () { supportsPassive = true; }
   }));
 } catch(e) {}
 
@@ -122,15 +122,15 @@ function disableScroll() {
 // call this to Enable
 function enableScroll() {
   window.removeEventListener('DOMMouseScroll', preventDefault, false);
-  window.removeEventListener(wheelEvent, preventDefault, wheelOpt); 
+  window.removeEventListener(wheelEvent, preventDefault, wheelOpt);
   window.removeEventListener('touchmove', preventDefault, wheelOpt);
   window.removeEventListener('keydown', preventDefaultForScrollKeys, false);
 }
 
 // $( document ).ready( function () {
 //   $( "a[href*='#']" ).on( "click", function( event ) {
-      
-//       var href = event.target.href; 
+
+//       var href = event.target.href;
 //       href = href.slice( href.indexOf( "#" ), href.length );
 //       scrollto($( href ).get( 0 ))
 //   } );
@@ -141,8 +141,8 @@ function enableScroll() {
 //   to = to.offsetTop;
 //   var i = parseInt(window.pageYOffset);
 //   if ( i != to ) {
-    
-      
+
+
 //   }
 // };
 var scroll = new SmoothScroll('a[href*="#"]');

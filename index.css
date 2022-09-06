@@ -227,14 +227,6 @@ main {
   background-color: var(--accent-dullest);
 }
 
-.form-subtitle {
-    position:relative;
-    bottom:-8px;
-    font-size: clamp(0.3rem, 0.8rem, 6vw);
-    width: 55%;
-    color: var(--text-primary);
-}
-
 .home-lines {
     position: relative;
     top: -135px;
@@ -268,6 +260,14 @@ main {
     font-weight: 400;
     color: var(--text-primary);
 }
+
+.contact-header {
+    font-family: seaford;
+    font-size: clamp(1.7rem, 3vw, 9vw);
+    font-weight: 400;
+    color: var(--text-primary);
+}
+
 .sub-title {
     font-size: clamp(1.3rem, 3rem, 6vw);
     position: relative;
@@ -290,6 +290,16 @@ main {
     bottom: 30px;
     font-size: clamp(1.3rem, 3rem, 6vw);
     color: var(--accent);
+}
+
+.info-paragraph {
+    width: 36%;
+    font-size: clamp(0.5rem, 1.2vw, 9vw);
+    font-weight: 400;
+    color: var(--text-primary);
+    text-align: left;
+    position:absolute;
+    right: 30.5%;
 }
 
 .nav-style {
@@ -404,6 +414,17 @@ main {
     padding-top: 5rem;
 }
 
+.contact-outer {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-right: 5%;
+    padding-top: 5rem;
+    text-align: right;
+}
+
 .slide-in-title {
     opacity: 0;
     font-size: clamp(1.3rem, 2rem, 6vw);;
@@ -420,6 +441,13 @@ main {
     border-color: var(--bg-secondary);
 }
 
+.slide-in-right {
+    opacity: 0;
+    font-size: clamp(1.3rem, 2rem, 6vw);;
+    color: var(--text-primary);
+    transform: translate(20%, 0%);
+    transition: all 0.3s;
+}
 
 .slide-in {
     opacity: 1;
@@ -441,6 +469,22 @@ main {
 /* #region Cards */
 
 .card {
+    float: left;
+    display: inline-block;
+    margin:10px;
+    width: 15%;
+    height: 125%;
+    background-color:#1B1B1B;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+    position: relative;
+    -webkit-box-shadow: 0 0 var(--card-shadow-size) 2px var(--card-shadow-color);
+    -moz-box-shadow: 0 0 var(--card-shadow-size) 2px var(--card-shadow-color);
+    box-shadow: 0 0 var(--card-shadow-size) 2px var(--card-shadow-color);
+}
+
+.card-OUTDATED {
     float: left;
     display: inline-block;
     margin:10px;
@@ -470,37 +514,6 @@ main {
     /* aspect-ratio: 16/98; */
 }
 
-.card::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background-color: rgba(0,0,0,0.0);
-    transition: background-color 0.3s;
-}
-
-
-.card:hover::after {
-    /* content: 'Click to visit'; */
-    content: var(--text, 'Click to visit');
-    display: flex;
-    padding-top: 50px;
-    justify-content: center;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background-color: rgba(0,0,0,0.5);
-    border-radius: 10px;
-    font-size: 1.4rem;
-    font-weight: 600;
-    color: var(--text-primary);
-
-}
-
 
 .card-divider {
     border: none;
@@ -523,14 +536,15 @@ main {
 
 .card-title {
 
-    font-size: 1.4rem;
+    font-size: 1.2vw;
     font-weight: 600;
     color: var(--text-primary);
 }
 .card-description {
-    font-size: 1.1rem;
+    font-size: 0.8vw;
     font-weight: 400;
     color: var(--text-primary);
+    text-align: left;
 }
 
 .card-tags {
@@ -691,13 +705,16 @@ main {
         padding-top: 6rem;
     }
 
+    .contact-outer {
+        padding-top: 6rem;
+    }
+
     .nav-link svg {
         margin: 0;
     }
 
-    .home-center-container, .contact-center-container {
+    .home-center-container {
         margin:auto;
-
         width:40%;
         height:25%;
         position:absolute;
@@ -708,6 +725,41 @@ main {
         /* background: hsl(0, 51%, 42%); */
         text-align: center;
     }
+
+    .contact-center-container {
+        margin:auto;
+        width:40%;
+        height:25%;
+        position:absolute;
+        top:30%;
+        bottom:0;
+        left:37%;
+        right:0;
+        /* background: hsl(0, 51%, 42%); */
+        text-align: center;
+    }
+
+    .prices-container {
+
+      width:75%;
+      height:25%;
+      position:absolute;
+      top:150px;
+      right:-34%;
+      /* background: hsl(0, 51%, 42%); */
+      text-align: center;
+  }
+
+  .price-info-container {
+
+    width:75%;
+    height:25%;
+    position:absolute;
+    top:135px;
+    right:19%;
+    /* background: hsl(0, 51%, 42%); */
+    text-align: center;
+}
 
     /* .navbar {
         right:0;
@@ -749,6 +801,15 @@ main {
         background: var(--accent);
         transition: width 0.3s;
     }
+
+    .form-subtitle {
+        position:relative;
+        bottom:-8px;
+        font-size: clamp(0.3rem, 0.75vw, 6vw);
+        width: 60%;
+        color: var(--text-primary);
+    }
+
     .navbar-nav {
         flex-direction: row;
         align-items: center;
@@ -800,7 +861,20 @@ main {
         max-width: 95%;
         height: 100px;
     }
-    .home-center-container, .contact-center-container {
+    .home-center-container {
+        margin:auto;
+        width:100%;
+        height:30%;
+        position:absolute;
+        top:0;
+        bottom:0;
+        left:0;
+        right:0;
+
+        text-align: center;
+    }
+
+    .contact-center-container {
         margin:auto;
 
         width:100%;
@@ -808,6 +882,30 @@ main {
         position:absolute;
         top:0;
         bottom:0;
+        left:0;
+        right:0;
+        text-align: center;
+    }
+
+    .prices-container {
+        margin:auto;
+
+        width:100%;
+        height:30%;
+        position:absolute;
+        top:0;
+        left:0;
+        right:0;
+        text-align: center;
+    }
+
+    .price-info-container {
+        margin:auto;
+
+        width:100%;
+        height:30%;
+        position:absolute;
+        top:0;
         left:0;
         right:0;
         text-align: center;
@@ -843,6 +941,14 @@ main {
           height: 20vw;
           width:auto;
           visibility:visible;
+    }
+
+    .form-subtitle {
+        position:relative;
+        bottom:-8px;
+        font-size: clamp(0.3rem, 0.8rem, 6vw);
+        width: 55%;
+        color: var(--text-primary);
     }
 
     .navbar {
