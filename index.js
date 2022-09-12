@@ -149,3 +149,46 @@ var scroll = new SmoothScroll('a[href*="#"]');
 document.addEventListener('gesturestart', function (e) {
   e.preventDefault();
 });
+
+
+
+// Audio player things from here on out
+
+
+let audioPlayers = document.querySelectorAll(".audio-player");
+
+if (audioPlayers.length) {
+  audioPlayers.forEach(function(audioPlayer, i) {
+    let audio = audioPlayer.querySelector("audio");
+    let playerButton = audioPlayer.querySelector(".player-button");
+    playerButton.addEventListener("click", function(e) {
+      let current = e.currentTarget;
+      let audio = current.closest(".audio-player").querySelector("audio");
+      let btnSvg = current.querySelector(".useBtn");
+      if (!audio.paused) {
+        btnSvg.setAttribute("href", "#icon-play");
+        audio.pause();
+      } else {
+        btnSvg.setAttribute("href", "#icon-pause");
+        audio.play();
+      };
+    });
+
+    let timeline = audioPlayer.querySelector('.timeline');
+    timeline.addEventListener('change', function(e) {
+      let time = (timeline.value * audio.duration) / 100;
+      audio.currentTime = time;
+    });
+
+    audio.addEventListener('ended', function(e) {
+      timeline.value = 0;
+      btnSvg.setAttribute("href", "#icon-play");
+    });
+
+    audio.addEventListener('timeupdate', function(e) {
+      let percentagePosition = (100 * audio.currentTime) / audio.duration;
+      timeline.style.backgroundSize = `${percentagePosition}% 100%`;
+      timeline.value = percentagePosition;
+    });
+  });
+}
