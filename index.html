@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" data-scrollery=main>
     <head>
+        <title>Starlotte's Music</title>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimum-scale=1.0">
@@ -10,8 +11,6 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="smooth-scroll.min.js"></script>
         <script defer src="index.js"></script>
-
-        <title>Starlotte's Music</title>
         <meta name="title" content="starlottemusic.github.io">
         <meta name="description" content="Starlotte's Music Portfolio">
         <meta name="keywords" content="star, starlotte, starlottemusic">
@@ -69,15 +68,15 @@ img#bg-graphic{
                         </div>
                     </div>
                     <div class="learn-more-button-1">
-                    <a href="#projects">
-                        <button class="nav-style button learn-more-button" id="lmbt" href="#projects" onclick='switchTo("projects");''>
+                    <a href="#portfolio">
+                        <button class="nav-style button learn-more-button" id="lmbt" href="#portfolio" onclick='switchTo("projects");'>
                             <span class="underline-hover">My Work </span>
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill="currentColor"><path d="M21.3 5.8L9.2 2.4c-.6-.2-1.2.2-1.2.9v12.1c-.6-.2-1.3-.4-2-.4-2.2 0-4 1.3-4 3s1.8 3 4 3 4-1.3 4-3v-7.2c0-.6.6-1.1 1.2-.9l8.1 2.3c.4.1.7.5.7.9v4.3c-.6-.3-1.3-.4-2-.4-2.2 0-4 1.3-4 3s1.8 3 4 3 4-1.3 4-3V6.7c0-.4-.3-.8-.7-.9zm-2.5 4.3l-8.1-2.3c-.4-.1-.7-.5-.7-1 0-.6.6-1.1 1.2-.9l8.1 2.3c.4.1.7.5.7 1 0 .6-.6 1.1-1.2.9z"></path></g></svg>
                         </button>
                         <div>
                         <div class="learn-more-button-2">
                             <a href="#contact">
-                                <button class="nav-style button learn-more-button" id="lmbt" href="#contact" onclick='switchTo("contact");''>
+                                <button class="nav-style button learn-more-button" id="lmbt" href="#contact" onclick='switchTo("contact");'>
                                     <span class="underline-hover">Get in Touch </span>
                                     <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="envelope" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-envelope fa-w-16 fa-7x"><path fill="currentColor" d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z" class=""></path></svg>
                                 </button>
@@ -86,7 +85,7 @@ img#bg-graphic{
                 </div>
             </div>
 
-            <div class="projects-section" id="projects">
+            <div class="projects-section" id="portfolio">
                 <!-- #region navbar -->
                 <nav class="navbar">
                     <ul class="navbar-nav">
@@ -104,7 +103,7 @@ img#bg-graphic{
                         </li>
 
                         <li class="nav-item" id="nav-item-projects">
-                            <a href="#projects" onclick="switchTo('projects')" class="nav-link">
+                            <a href="#portfolio" onclick="switchTo('projects')" class="nav-link">
                               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill="currentColor"><path d="M21.3 5.8L9.2 2.4c-.6-.2-1.2.2-1.2.9v12.1c-.6-.2-1.3-.4-2-.4-2.2 0-4 1.3-4 3s1.8 3 4 3 4-1.3 4-3v-7.2c0-.6.6-1.1 1.2-.9l8.1 2.3c.4.1.7.5.7.9v4.3c-.6-.3-1.3-.4-2-.4-2.2 0-4 1.3-4 3s1.8 3 4 3 4-1.3 4-3V6.7c0-.4-.3-.8-.7-.9zm-2.5 4.3l-8.1-2.3c-.4-.1-.7-.5-.7-1 0-.6.6-1.1 1.2-.9l8.1 2.3c.4.1.7.5.7 1 0 .6-.6 1.1-1.2.9z"></path></g></svg>
                         <span class="link-text underline-hover">Portfolio</span>
                             </a>
@@ -125,16 +124,30 @@ img#bg-graphic{
 
 
                 <!-- #region panels -->
-                <div class="projects-outer">
-                    <h1 class="projects-header slide-in-title slide-in" id="slide-in-header-projects">Projects</h1>
+                <div class="projects-outer" id="portfolio">
+                  <div class="projects-header slide-in-title slide-in">
+                    <h1 class="projects-header slide-in-title slide-in" id="slide-in-header-projects">Best Works</h1>
+                    <div class="arrow-button-up1">
+                        <button class="arrow-nav-style button learn-more-button">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill="currentColor"><path d="M4 12c.8.8 2.1.8 2.8 0L10 8.9V20c0 1.1.9 2 2 2s2-.9 2-2V8.9l3.2 3.2c.8.8 2.1.8 2.8 0 .8-.8.8-2 0-2.8l-6.6-6.6C13 2.2 12.5 2 12 2c-.5 0-1 .2-1.4.6L4 9.2c-.8.7-.8 2 0 2.8z"></path></g></svg>
+                        </button>
+                      </div>
+                      <div class="arrow-button-down1">
+                      <a href="#portfolio-2">
+                          <button class="arrow-nav-style button learn-more-button" id="lmbt" href="#portfolio-2" onclick='switchTo("projects");'>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill="currentColor"><path d="M20 12c-.8-.8-2.1-.8-2.8 0L14 15.1V4c0-1.1-.9-2-2-2s-2 .9-2 2v11.2L6.8 12c-.8-.8-2.1-.8-2.8 0-.8.8-.8 2 0 2.8l6.6 6.6c.4.4.9.6 1.4.6.5 0 1-.2 1.4-.6l6.5-6.5c.9-.8.9-2.1.1-2.9z"></path></g></svg>
+                          </button>
+                        </a>
+                        </div>
+                      </div>
                     <div class="projects-container">
                         <!-- TurtleDash -->
-                        <a class="card-a" target="_blank">
+                        <a class="card-a">
                           <div class="portfolio-back">
                             <h2 class="card-text-title">TITLE</h2>
                             <h2 class="card-description">Description<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></h2>
                             <div class="portfolio-card" id="card-cover">
-                                <img src="img/thumbnail/placeholder.png" class="card-image">
+                              <img class="card-image" src="img/thumbnail/placeholder.png"/>
                                 <hr class="card-divider">
                                 <div class="card-contents">
                                     <h2 class="card-title">Title</h2>
@@ -154,7 +167,7 @@ img#bg-graphic{
                                       </button>
                                       <input type="range" class="timeline" min="0" max="100" step="1" value="0" onchange="updateTextInput(this.value);">
                                     </div>
-                                    <a href="https://soundcloud.com/starlotte-117" class="sc-link">
+                                    <a href="https://soundcloud.com/starlotte-117" class="sc-link" target="_blank">
                                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-14.333 15.524c-.405-.365-.667-.903-.667-1.512 0-.608.262-1.146.667-1.512v3.024zm1.333.476c-.243 0-.369.003-.667-.092v-3.792c.316-.101.465-.097.667-.081v3.965zm1.333 0h-.666v-3.778l.206.121c.091-.375.253-.718.461-1.023v4.68zm1.334 0h-.667v-5.378c.206-.154.426-.286.667-.377v5.755zm1.333 0h-.667v-5.905c.251-.027.328-.046.667.006v5.899zm1.333 0h-.667v-5.7l.253.123c.119-.207.261-.395.414-.572v6.149zm6.727 0h-6.06v-6.748c.532-.366 1.16-.585 1.842-.585 1.809 0 3.275 1.494 3.41 3.386 1.303-.638 2.748.387 2.748 1.876 0 1.143-.869 2.071-1.94 2.071z"/></svg>
                                     </a>
                                   </div>
@@ -189,7 +202,7 @@ img#bg-graphic{
                                       </button>
                                       <input type="range" class="timeline" min="0" max="100" step="1" value="0" onchange="updateTextInput(this.value);">
                                     </div>
-                                    <a href="https://soundcloud.com/starlotte-117" class="sc-link">
+                                    <a href="https://soundcloud.com/starlotte-117" class="sc-link" target="_blank">
                                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-14.333 15.524c-.405-.365-.667-.903-.667-1.512 0-.608.262-1.146.667-1.512v3.024zm1.333.476c-.243 0-.369.003-.667-.092v-3.792c.316-.101.465-.097.667-.081v3.965zm1.333 0h-.666v-3.778l.206.121c.091-.375.253-.718.461-1.023v4.68zm1.334 0h-.667v-5.378c.206-.154.426-.286.667-.377v5.755zm1.333 0h-.667v-5.905c.251-.027.328-.046.667.006v5.899zm1.333 0h-.667v-5.7l.253.123c.119-.207.261-.395.414-.572v6.149zm6.727 0h-6.06v-6.748c.532-.366 1.16-.585 1.842-.585 1.809 0 3.275 1.494 3.41 3.386 1.303-.638 2.748.387 2.748 1.876 0 1.143-.869 2.071-1.94 2.071z"/></svg>
                                     </a>
                                   </div>
@@ -224,7 +237,7 @@ img#bg-graphic{
                                       </button>
                                       <input type="range" class="timeline" min="0" max="100" step="1" value="0" onchange="updateTextInput(this.value);">
                                     </div>
-                                    <a href="https://soundcloud.com/starlotte-117" class="sc-link">
+                                    <a href="https://soundcloud.com/starlotte-117" class="sc-link" target="_blank">
                                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-14.333 15.524c-.405-.365-.667-.903-.667-1.512 0-.608.262-1.146.667-1.512v3.024zm1.333.476c-.243 0-.369.003-.667-.092v-3.792c.316-.101.465-.097.667-.081v3.965zm1.333 0h-.666v-3.778l.206.121c.091-.375.253-.718.461-1.023v4.68zm1.334 0h-.667v-5.378c.206-.154.426-.286.667-.377v5.755zm1.333 0h-.667v-5.905c.251-.027.328-.046.667.006v5.899zm1.333 0h-.667v-5.7l.253.123c.119-.207.261-.395.414-.572v6.149zm6.727 0h-6.06v-6.748c.532-.366 1.16-.585 1.842-.585 1.809 0 3.275 1.494 3.41 3.386 1.303-.638 2.748.387 2.748 1.876 0 1.143-.869 2.071-1.94 2.071z"/></svg>
                                     </a>
                                   </div>
@@ -258,7 +271,7 @@ img#bg-graphic{
                                       </button>
                                       <input type="range" class="timeline" min="0" max="100" step="1" value="0" onchange="updateTextInput(this.value);">
                                     </div>
-                                    <a href="https://soundcloud.com/starlotte-117" class="sc-link">
+                                    <a href="https://soundcloud.com/starlotte-117" class="sc-link" target="_blank">
                                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-14.333 15.524c-.405-.365-.667-.903-.667-1.512 0-.608.262-1.146.667-1.512v3.024zm1.333.476c-.243 0-.369.003-.667-.092v-3.792c.316-.101.465-.097.667-.081v3.965zm1.333 0h-.666v-3.778l.206.121c.091-.375.253-.718.461-1.023v4.68zm1.334 0h-.667v-5.378c.206-.154.426-.286.667-.377v5.755zm1.333 0h-.667v-5.905c.251-.027.328-.046.667.006v5.899zm1.333 0h-.667v-5.7l.253.123c.119-.207.261-.395.414-.572v6.149zm6.727 0h-6.06v-6.748c.532-.366 1.16-.585 1.842-.585 1.809 0 3.275 1.494 3.41 3.386 1.303-.638 2.748.387 2.748 1.876 0 1.143-.869 2.071-1.94 2.071z"/></svg>
                                     </a>
                                   </div>
@@ -295,7 +308,7 @@ img#bg-graphic{
                                       </button>
                                       <input type="range" class="timeline" min="0" max="100" step="1" value="0" onchange="updateTextInput(this.value);">
                                     </div>
-                                    <a href="https://soundcloud.com/starlotte-117" class="sc-link">
+                                    <a href="https://soundcloud.com/starlotte-117" class="sc-link" target="_blank">
                                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-14.333 15.524c-.405-.365-.667-.903-.667-1.512 0-.608.262-1.146.667-1.512v3.024zm1.333.476c-.243 0-.369.003-.667-.092v-3.792c.316-.101.465-.097.667-.081v3.965zm1.333 0h-.666v-3.778l.206.121c.091-.375.253-.718.461-1.023v4.68zm1.334 0h-.667v-5.378c.206-.154.426-.286.667-.377v5.755zm1.333 0h-.667v-5.905c.251-.027.328-.046.667.006v5.899zm1.333 0h-.667v-5.7l.253.123c.119-.207.261-.395.414-.572v6.149zm6.727 0h-6.06v-6.748c.532-.366 1.16-.585 1.842-.585 1.809 0 3.275 1.494 3.41 3.386 1.303-.638 2.748.387 2.748 1.876 0 1.143-.869 2.071-1.94 2.071z"/></svg>
                                     </a>
                                   </div>
@@ -328,7 +341,7 @@ img#bg-graphic{
                                       </button>
                                       <input type="range" class="timeline" min="0" max="100" step="1" value="0" onchange="updateTextInput(this.value);">
                                     </div>
-                                    <a href="https://soundcloud.com/starlotte-117" class="sc-link">
+                                    <a href="https://soundcloud.com/starlotte-117" class="sc-link" target="_blank">
                                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-14.333 15.524c-.405-.365-.667-.903-.667-1.512 0-.608.262-1.146.667-1.512v3.024zm1.333.476c-.243 0-.369.003-.667-.092v-3.792c.316-.101.465-.097.667-.081v3.965zm1.333 0h-.666v-3.778l.206.121c.091-.375.253-.718.461-1.023v4.68zm1.334 0h-.667v-5.378c.206-.154.426-.286.667-.377v5.755zm1.333 0h-.667v-5.905c.251-.027.328-.046.667.006v5.899zm1.333 0h-.667v-5.7l.253.123c.119-.207.261-.395.414-.572v6.149zm6.727 0h-6.06v-6.748c.532-.366 1.16-.585 1.842-.585 1.809 0 3.275 1.494 3.41 3.386 1.303-.638 2.748.387 2.748 1.876 0 1.143-.869 2.071-1.94 2.071z"/></svg>
                                     </a>
                                   </div>
@@ -362,7 +375,7 @@ img#bg-graphic{
                                       </button>
                                       <input type="range" class="timeline" min="0" max="100" step="1" value="0" onchange="updateTextInput(this.value);">
                                     </div>
-                                    <a href="https://soundcloud.com/starlotte-117" class="sc-link">
+                                    <a href="https://soundcloud.com/starlotte-117" class="sc-link" target="_blank">
                                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-14.333 15.524c-.405-.365-.667-.903-.667-1.512 0-.608.262-1.146.667-1.512v3.024zm1.333.476c-.243 0-.369.003-.667-.092v-3.792c.316-.101.465-.097.667-.081v3.965zm1.333 0h-.666v-3.778l.206.121c.091-.375.253-.718.461-1.023v4.68zm1.334 0h-.667v-5.378c.206-.154.426-.286.667-.377v5.755zm1.333 0h-.667v-5.905c.251-.027.328-.046.667.006v5.899zm1.333 0h-.667v-5.7l.253.123c.119-.207.261-.395.414-.572v6.149zm6.727 0h-6.06v-6.748c.532-.366 1.16-.585 1.842-.585 1.809 0 3.275 1.494 3.41 3.386 1.303-.638 2.748.387 2.748 1.876 0 1.143-.869 2.071-1.94 2.071z"/></svg>
                                     </a>
                                   </div>
@@ -396,7 +409,7 @@ img#bg-graphic{
                                       </button>
                                       <input type="range" class="timeline" min="0" max="100" step="1" value="0" onchange="updateTextInput(this.value);">
                                     </div>
-                                    <a href="https://soundcloud.com/starlotte-117" class="sc-link">
+                                    <a href="https://soundcloud.com/starlotte-117" class="sc-link" target="_blank">
                                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-14.333 15.524c-.405-.365-.667-.903-.667-1.512 0-.608.262-1.146.667-1.512v3.024zm1.333.476c-.243 0-.369.003-.667-.092v-3.792c.316-.101.465-.097.667-.081v3.965zm1.333 0h-.666v-3.778l.206.121c.091-.375.253-.718.461-1.023v4.68zm1.334 0h-.667v-5.378c.206-.154.426-.286.667-.377v5.755zm1.333 0h-.667v-5.905c.251-.027.328-.046.667.006v5.899zm1.333 0h-.667v-5.7l.253.123c.119-.207.261-.395.414-.572v6.149zm6.727 0h-6.06v-6.748c.532-.366 1.16-.585 1.842-.585 1.809 0 3.275 1.494 3.41 3.386 1.303-.638 2.748.387 2.748 1.876 0 1.143-.869 2.071-1.94 2.071z"/></svg>
                                     </a>
                                   </div>
@@ -430,7 +443,7 @@ img#bg-graphic{
                                       </button>
                                       <input type="range" class="timeline" min="0" max="100" step="1" value="0" onchange="updateTextInput(this.value);">
                                     </div>
-                                    <a href="https://soundcloud.com/starlotte-117" class="sc-link">
+                                    <a href="https://soundcloud.com/starlotte-117" class="sc-link" target="_blank">
                                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-14.333 15.524c-.405-.365-.667-.903-.667-1.512 0-.608.262-1.146.667-1.512v3.024zm1.333.476c-.243 0-.369.003-.667-.092v-3.792c.316-.101.465-.097.667-.081v3.965zm1.333 0h-.666v-3.778l.206.121c.091-.375.253-.718.461-1.023v4.68zm1.334 0h-.667v-5.378c.206-.154.426-.286.667-.377v5.755zm1.333 0h-.667v-5.905c.251-.027.328-.046.667.006v5.899zm1.333 0h-.667v-5.7l.253.123c.119-.207.261-.395.414-.572v6.149zm6.727 0h-6.06v-6.748c.532-.366 1.16-.585 1.842-.585 1.809 0 3.275 1.494 3.41 3.386 1.303-.638 2.748.387 2.748 1.876 0 1.143-.869 2.071-1.94 2.071z"/></svg>
                                     </a>
                                   </div>
@@ -464,15 +477,13 @@ img#bg-graphic{
                                       </button>
                                       <input type="range" class="timeline" min="0" max="100" step="1" value="0" onchange="updateTextInput(this.value);">
                                     </div>
-                                    <a href="https://soundcloud.com/starlotte-117" class="sc-link">
+                                    <a href="https://soundcloud.com/starlotte-117" class="sc-link" target="_blank">
                                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-14.333 15.524c-.405-.365-.667-.903-.667-1.512 0-.608.262-1.146.667-1.512v3.024zm1.333.476c-.243 0-.369.003-.667-.092v-3.792c.316-.101.465-.097.667-.081v3.965zm1.333 0h-.666v-3.778l.206.121c.091-.375.253-.718.461-1.023v4.68zm1.334 0h-.667v-5.378c.206-.154.426-.286.667-.377v5.755zm1.333 0h-.667v-5.905c.251-.027.328-.046.667.006v5.899zm1.333 0h-.667v-5.7l.253.123c.119-.207.261-.395.414-.572v6.149zm6.727 0h-6.06v-6.748c.532-.366 1.16-.585 1.842-.585 1.809 0 3.275 1.494 3.41 3.386 1.303-.638 2.748.387 2.748 1.876 0 1.143-.869 2.071-1.94 2.071z"/></svg>
                                     </a>
                                   </div>
                             </div>
                           </div>
                         </a>
-                    </div>
-                </div>
 
                 <svg class="plyrBtns" style="display:none" aria-hidden="true">
                   <symbol class="icon icon-play" id="icon-play" viewBox="0 0 20 20" fill="currentColor">
@@ -489,10 +500,786 @@ img#bg-graphic{
                   </symbol>
                 </svg>
                 <!-- #endregion -->
-
-
-
             </div>
+          </div>
+
+
+
+
+
+
+
+
+          <!-- #region panels -->
+          <div class="projects-outer" id="portfolio-2">
+            <div class="projects-header slide-in-title slide-in">
+              <h1 class="projects-header slide-in-title slide-in" id="slide-in-header-projects">Past Music Commissions</h1>
+              <div class="arrow-button-up2">
+                <a href="#portfolio">
+                  <button class="arrow-nav-style button learn-more-button" id="lmbt" href="#portfolio" onclick='switchTo("projects");'>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill="currentColor"><path d="M4 12c.8.8 2.1.8 2.8 0L10 8.9V20c0 1.1.9 2 2 2s2-.9 2-2V8.9l3.2 3.2c.8.8 2.1.8 2.8 0 .8-.8.8-2 0-2.8l-6.6-6.6C13 2.2 12.5 2 12 2c-.5 0-1 .2-1.4.6L4 9.2c-.8.7-.8 2 0 2.8z"></path></g></svg>
+                  </button>
+                  </a>
+                </div>
+                <div class="arrow-button-down2">
+                <a href="#portfolio-3">
+                    <button class="arrow-nav-style button learn-more-button" id="lmbt" href="#portfolio-3" onclick='switchTo("projects");'>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill="currentColor"><path d="M20 12c-.8-.8-2.1-.8-2.8 0L14 15.1V4c0-1.1-.9-2-2-2s-2 .9-2 2v11.2L6.8 12c-.8-.8-2.1-.8-2.8 0-.8.8-.8 2 0 2.8l6.6 6.6c.4.4.9.6 1.4.6.5 0 1-.2 1.4-.6l6.5-6.5c.9-.8.9-2.1.1-2.9z"></path></g></svg>
+                    </button>
+                  </a>
+                  </div>
+                </div>
+              <div class="projects-container">
+                  <!-- TurtleDash -->
+                  <a class="card-a">
+                    <div class="portfolio-back">
+                      <h2 class="card-text-title">TITLE</h2>
+                      <h2 class="card-description">Description<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></h2>
+                      <div class="portfolio-card" id="card-cover">
+                        <img class="card-image" src="img/thumbnail/placeholder.png"/>
+                          <hr class="card-divider">
+                          <div class="card-contents">
+                              <h2 class="card-title">Title</h2>
+                            </div>
+                          </div>
+
+                          <div class="card-player">
+                            <div class="audio-player left">
+                              <div class="icon-container">
+                                <audio preload="metadata" src="mus/testsong.mp3"></audio>
+                              </div>
+                              <div class="controls">
+                                <button class="player-button">
+                                  <svg viewBox="0 0 20 20" fill="#3D3132">
+                                    <use class="useBtn" href="#icon-play" />
+                                  </svg>
+                                </button>
+                                <input type="range" class="timeline" min="0" max="100" step="1" value="0" onchange="updateTextInput(this.value);">
+                              </div>
+                              <a href="https://soundcloud.com/starlotte-117" class="sc-link" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-14.333 15.524c-.405-.365-.667-.903-.667-1.512 0-.608.262-1.146.667-1.512v3.024zm1.333.476c-.243 0-.369.003-.667-.092v-3.792c.316-.101.465-.097.667-.081v3.965zm1.333 0h-.666v-3.778l.206.121c.091-.375.253-.718.461-1.023v4.68zm1.334 0h-.667v-5.378c.206-.154.426-.286.667-.377v5.755zm1.333 0h-.667v-5.905c.251-.027.328-.046.667.006v5.899zm1.333 0h-.667v-5.7l.253.123c.119-.207.261-.395.414-.572v6.149zm6.727 0h-6.06v-6.748c.532-.366 1.16-.585 1.842-.585 1.809 0 3.275 1.494 3.41 3.386 1.303-.638 2.748.387 2.748 1.876 0 1.143-.869 2.071-1.94 2.071z"/></svg>
+                              </a>
+                            </div>
+                      </div>
+                    </div>
+                  </a>
+
+
+                  <!-- Blender4FTC -->
+                  <a class="card-a" target="_blank">
+                    <div class="portfolio-back">
+                      <h2 class="card-text-title">TITLE</h2>
+                      <h2 class="card-description">Description<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></h2>
+                      <div class="portfolio-card" id="card-cover">
+                          <img src="img/thumbnail/placeholder.png" class="card-image">
+                          <hr class="card-divider">
+                          <div class="card-contents">
+                              <h2 class="card-title">Title</h2>
+                            </div>
+                          </div>
+
+                          <div class="card-player">
+                            <div class="audio-player left">
+                              <div class="icon-container">
+                                <audio preload="metadata" src="mus/testsong.mp3"></audio>
+                              </div>
+                              <div class="controls">
+                                <button class="player-button">
+                                  <svg viewBox="0 0 20 20" fill="#3D3132">
+                                    <use class="useBtn" href="#icon-play" />
+                                  </svg>
+                                </button>
+                                <input type="range" class="timeline" min="0" max="100" step="1" value="0" onchange="updateTextInput(this.value);">
+                              </div>
+                              <a href="https://soundcloud.com/starlotte-117" class="sc-link" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-14.333 15.524c-.405-.365-.667-.903-.667-1.512 0-.608.262-1.146.667-1.512v3.024zm1.333.476c-.243 0-.369.003-.667-.092v-3.792c.316-.101.465-.097.667-.081v3.965zm1.333 0h-.666v-3.778l.206.121c.091-.375.253-.718.461-1.023v4.68zm1.334 0h-.667v-5.378c.206-.154.426-.286.667-.377v5.755zm1.333 0h-.667v-5.905c.251-.027.328-.046.667.006v5.899zm1.333 0h-.667v-5.7l.253.123c.119-.207.261-.395.414-.572v6.149zm6.727 0h-6.06v-6.748c.532-.366 1.16-.585 1.842-.585 1.809 0 3.275 1.494 3.41 3.386 1.303-.638 2.748.387 2.748 1.876 0 1.143-.869 2.071-1.94 2.071z"/></svg>
+                              </a>
+                            </div>
+                      </div>
+                    </div>
+                  </a>
+
+
+                  <!-- First2Click -->
+                  <a class="card-a" target="_blank">
+                    <div class="portfolio-back">
+                      <h2 class="card-text-title">TITLE</h2>
+                      <h2 class="card-description">Description<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></h2>
+                      <div class="portfolio-card" id="card-cover">
+                          <img src="img/thumbnail/placeholder.png" class="card-image">
+                          <hr class="card-divider">
+                          <div class="card-contents">
+                              <h2 class="card-title">Title</h2>
+                            </div>
+                          </div>
+
+                          <div class="card-player">
+                            <div class="audio-player left">
+                              <div class="icon-container">
+                                <audio preload="metadata" src="mus/testsong.mp3"></audio>
+                              </div>
+                              <div class="controls">
+                                <button class="player-button">
+                                  <svg viewBox="0 0 20 20" fill="#3D3132">
+                                    <use class="useBtn" href="#icon-play" />
+                                  </svg>
+                                </button>
+                                <input type="range" class="timeline" min="0" max="100" step="1" value="0" onchange="updateTextInput(this.value);">
+                              </div>
+                              <a href="https://soundcloud.com/starlotte-117" class="sc-link" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-14.333 15.524c-.405-.365-.667-.903-.667-1.512 0-.608.262-1.146.667-1.512v3.024zm1.333.476c-.243 0-.369.003-.667-.092v-3.792c.316-.101.465-.097.667-.081v3.965zm1.333 0h-.666v-3.778l.206.121c.091-.375.253-.718.461-1.023v4.68zm1.334 0h-.667v-5.378c.206-.154.426-.286.667-.377v5.755zm1.333 0h-.667v-5.905c.251-.027.328-.046.667.006v5.899zm1.333 0h-.667v-5.7l.253.123c.119-.207.261-.395.414-.572v6.149zm6.727 0h-6.06v-6.748c.532-.366 1.16-.585 1.842-.585 1.809 0 3.275 1.494 3.41 3.386 1.303-.638 2.748.387 2.748 1.876 0 1.143-.869 2.071-1.94 2.071z"/></svg>
+                              </a>
+                            </div>
+                      </div>
+                    </div>
+                  </a>
+
+                  <!-- Endless Oceans -->
+                  <a class="card-a" target="_blank">
+                    <div class="portfolio-back">
+                      <h2 class="card-text-title">TITLE</h2>
+                      <h2 class="card-description">Description<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></h2>
+                      <div class="portfolio-card" id="card-cover">
+                          <img src="img/thumbnail/placeholder.png" class="card-image">
+                          <hr class="card-divider">
+                          <div class="card-contents">
+                              <h2 class="card-title">Title</h2>
+                    </div>
+                          </div>
+
+                          <div class="card-player">
+                            <div class="audio-player left">
+                              <div class="icon-container">
+                                <audio preload="metadata" src="mus/testsong.mp3"></audio>
+                              </div>
+                              <div class="controls">
+                                <button class="player-button">
+                                  <svg viewBox="0 0 20 20" fill="#3D3132">
+                                    <use class="useBtn" href="#icon-play" />
+                                  </svg>
+                                </button>
+                                <input type="range" class="timeline" min="0" max="100" step="1" value="0" onchange="updateTextInput(this.value);">
+                              </div>
+                              <a href="https://soundcloud.com/starlotte-117" class="sc-link" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-14.333 15.524c-.405-.365-.667-.903-.667-1.512 0-.608.262-1.146.667-1.512v3.024zm1.333.476c-.243 0-.369.003-.667-.092v-3.792c.316-.101.465-.097.667-.081v3.965zm1.333 0h-.666v-3.778l.206.121c.091-.375.253-.718.461-1.023v4.68zm1.334 0h-.667v-5.378c.206-.154.426-.286.667-.377v5.755zm1.333 0h-.667v-5.905c.251-.027.328-.046.667.006v5.899zm1.333 0h-.667v-5.7l.253.123c.119-.207.261-.395.414-.572v6.149zm6.727 0h-6.06v-6.748c.532-.366 1.16-.585 1.842-.585 1.809 0 3.275 1.494 3.41 3.386 1.303-.638 2.748.387 2.748 1.876 0 1.143-.869 2.071-1.94 2.071z"/></svg>
+                              </a>
+                            </div>
+                      </div>
+                    </div>
+                  </a>
+
+
+
+
+                  <!-- Path Planner -->
+                  <a class="card-a">
+                    <div class="portfolio-back">
+                      <h2 class="card-text-title">TITLE</h2>
+                      <h2 class="card-description">Description<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></h2>
+                      <div class="portfolio-card" id="card-cover">
+                          <img src="img/thumbnail/placeholder.png" class="card-image">
+                          <hr class="card-divider">
+                          <div class="card-contents">
+                              <h2 class="card-title">Title</h2>
+                          </div>
+                          </div>
+
+                          <div class="card-player">
+                            <div class="audio-player left">
+                              <div class="icon-container">
+                                <audio preload="metadata" src="mus/testsong.mp3"></audio>
+                              </div>
+                              <div class="controls">
+                                <button class="player-button">
+                                  <svg viewBox="0 0 20 20" fill="#3D3132">
+                                    <use class="useBtn" href="#icon-play" />
+                                  </svg>
+                                </button>
+                                <input type="range" class="timeline" min="0" max="100" step="1" value="0" onchange="updateTextInput(this.value);">
+                              </div>
+                              <a href="https://soundcloud.com/starlotte-117" class="sc-link" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-14.333 15.524c-.405-.365-.667-.903-.667-1.512 0-.608.262-1.146.667-1.512v3.024zm1.333.476c-.243 0-.369.003-.667-.092v-3.792c.316-.101.465-.097.667-.081v3.965zm1.333 0h-.666v-3.778l.206.121c.091-.375.253-.718.461-1.023v4.68zm1.334 0h-.667v-5.378c.206-.154.426-.286.667-.377v5.755zm1.333 0h-.667v-5.905c.251-.027.328-.046.667.006v5.899zm1.333 0h-.667v-5.7l.253.123c.119-.207.261-.395.414-.572v6.149zm6.727 0h-6.06v-6.748c.532-.366 1.16-.585 1.842-.585 1.809 0 3.275 1.494 3.41 3.386 1.303-.638 2.748.387 2.748 1.876 0 1.143-.869 2.071-1.94 2.071z"/></svg>
+                              </a>
+                            </div>
+                      </div>
+                    </div>
+                  </a>
+                  <!-- Path Planner -->
+                  <a class="card-a" target="_blank">
+                    <div class="portfolio-back">
+                      <h2 class="card-text-title">TITLE</h2>
+                      <h2 class="card-description">Description<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></h2>
+                      <div class="portfolio-card" id="card-cover" style="--text: 'View Preview'">
+                          <img src="img/thumbnail/placeholder.png" class="card-image">
+                          <hr class="card-divider">
+                          <div class="card-contents">
+                              <h2 class="card-title">Title</h2>
+                          </div>
+                          </div>
+
+                          <div class="card-player">
+                            <div class="audio-player left">
+                              <div class="icon-container">
+                                <audio preload="metadata" src="mus/testsong.mp3"></audio>
+                              </div>
+                              <div class="controls">
+                                <button class="player-button">
+                                  <svg viewBox="0 0 20 20" fill="#3D3132">
+                                    <use class="useBtn" href="#icon-play" />
+                                  </svg>
+                                </button>
+                                <input type="range" class="timeline" min="0" max="100" step="1" value="0" onchange="updateTextInput(this.value);">
+                              </div>
+                              <a href="https://soundcloud.com/starlotte-117" class="sc-link" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-14.333 15.524c-.405-.365-.667-.903-.667-1.512 0-.608.262-1.146.667-1.512v3.024zm1.333.476c-.243 0-.369.003-.667-.092v-3.792c.316-.101.465-.097.667-.081v3.965zm1.333 0h-.666v-3.778l.206.121c.091-.375.253-.718.461-1.023v4.68zm1.334 0h-.667v-5.378c.206-.154.426-.286.667-.377v5.755zm1.333 0h-.667v-5.905c.251-.027.328-.046.667.006v5.899zm1.333 0h-.667v-5.7l.253.123c.119-.207.261-.395.414-.572v6.149zm6.727 0h-6.06v-6.748c.532-.366 1.16-.585 1.842-.585 1.809 0 3.275 1.494 3.41 3.386 1.303-.638 2.748.387 2.748 1.876 0 1.143-.869 2.071-1.94 2.071z"/></svg>
+                              </a>
+                            </div>
+                      </div>
+                    </div>
+                  </a>
+
+                  <!-- Path Planner -->
+                  <a class="card-a">
+                    <div class="portfolio-back">
+                      <h2 class="card-text-title">TITLE</h2>
+                      <h2 class="card-description">Description<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></h2>
+                      <div class="portfolio-card" id="card-cover">
+                          <img src="img/thumbnail/placeholder.png" class="card-image">
+                          <hr class="card-divider">
+                          <div class="card-contents">
+                              <h2 class="card-title">Title</h2>
+                          </div>
+                          </div>
+
+                          <div class="card-player">
+                            <div class="audio-player left">
+                              <div class="icon-container">
+                                <audio preload="metadata" src="mus/testsong.mp3"></audio>
+                              </div>
+                              <div class="controls">
+                                <button class="player-button">
+                                  <svg viewBox="0 0 20 20" fill="#3D3132">
+                                    <use class="useBtn" href="#icon-play" />
+                                  </svg>
+                                </button>
+                                <input type="range" class="timeline" min="0" max="100" step="1" value="0" onchange="updateTextInput(this.value);">
+                              </div>
+                              <a href="https://soundcloud.com/starlotte-117" class="sc-link" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-14.333 15.524c-.405-.365-.667-.903-.667-1.512 0-.608.262-1.146.667-1.512v3.024zm1.333.476c-.243 0-.369.003-.667-.092v-3.792c.316-.101.465-.097.667-.081v3.965zm1.333 0h-.666v-3.778l.206.121c.091-.375.253-.718.461-1.023v4.68zm1.334 0h-.667v-5.378c.206-.154.426-.286.667-.377v5.755zm1.333 0h-.667v-5.905c.251-.027.328-.046.667.006v5.899zm1.333 0h-.667v-5.7l.253.123c.119-.207.261-.395.414-.572v6.149zm6.727 0h-6.06v-6.748c.532-.366 1.16-.585 1.842-.585 1.809 0 3.275 1.494 3.41 3.386 1.303-.638 2.748.387 2.748 1.876 0 1.143-.869 2.071-1.94 2.071z"/></svg>
+                              </a>
+                            </div>
+                      </div>
+                    </div>
+                  </a>
+
+                  <!-- Path Planner -->
+                  <a class="card-a">
+                    <div class="portfolio-back">
+                      <h2 class="card-text-title">TITLE</h2>
+                      <h2 class="card-description">Description<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></h2>
+                      <div class="portfolio-card" id="card-cover">
+                          <img src="img/thumbnail/placeholder.png" class="card-image">
+                          <hr class="card-divider">
+                          <div class="card-contents">
+                              <h2 class="card-title">Title</h2>
+                          </div>
+                          </div>
+
+                          <div class="card-player">
+                            <div class="audio-player left">
+                              <div class="icon-container">
+                                <audio preload="metadata" src="mus/testsong.mp3"></audio>
+                              </div>
+                              <div class="controls">
+                                <button class="player-button">
+                                  <svg viewBox="0 0 20 20" fill="#3D3132">
+                                    <use class="useBtn" href="#icon-play" />
+                                  </svg>
+                                </button>
+                                <input type="range" class="timeline" min="0" max="100" step="1" value="0" onchange="updateTextInput(this.value);">
+                              </div>
+                              <a href="https://soundcloud.com/starlotte-117" class="sc-link" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-14.333 15.524c-.405-.365-.667-.903-.667-1.512 0-.608.262-1.146.667-1.512v3.024zm1.333.476c-.243 0-.369.003-.667-.092v-3.792c.316-.101.465-.097.667-.081v3.965zm1.333 0h-.666v-3.778l.206.121c.091-.375.253-.718.461-1.023v4.68zm1.334 0h-.667v-5.378c.206-.154.426-.286.667-.377v5.755zm1.333 0h-.667v-5.905c.251-.027.328-.046.667.006v5.899zm1.333 0h-.667v-5.7l.253.123c.119-.207.261-.395.414-.572v6.149zm6.727 0h-6.06v-6.748c.532-.366 1.16-.585 1.842-.585 1.809 0 3.275 1.494 3.41 3.386 1.303-.638 2.748.387 2.748 1.876 0 1.143-.869 2.071-1.94 2.071z"/></svg>
+                              </a>
+                            </div>
+                      </div>
+                    </div>
+                  </a>
+
+                  <!-- Path Planner -->
+                  <a class="card-a">
+                    <div class="portfolio-back">
+                      <h2 class="card-text-title">TITLE</h2>
+                      <h2 class="card-description">Description<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></h2>
+                      <div class="portfolio-card" id="card-cover">
+                          <img src="img/thumbnail/placeholder.png" class="card-image">
+                          <hr class="card-divider">
+                          <div class="card-contents">
+                              <h2 class="card-title">Title</h2>
+                          </div>
+                          </div>
+
+                          <div class="card-player">
+                            <div class="audio-player left">
+                              <div class="icon-container">
+                                <audio preload="metadata" src="mus/testsong.mp3"></audio>
+                              </div>
+                              <div class="controls">
+                                <button class="player-button">
+                                  <svg viewBox="0 0 20 20" fill="#3D3132">
+                                    <use class="useBtn" href="#icon-play" />
+                                  </svg>
+                                </button>
+                                <input type="range" class="timeline" min="0" max="100" step="1" value="0" onchange="updateTextInput(this.value);">
+                              </div>
+                              <a href="https://soundcloud.com/starlotte-117" class="sc-link" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-14.333 15.524c-.405-.365-.667-.903-.667-1.512 0-.608.262-1.146.667-1.512v3.024zm1.333.476c-.243 0-.369.003-.667-.092v-3.792c.316-.101.465-.097.667-.081v3.965zm1.333 0h-.666v-3.778l.206.121c.091-.375.253-.718.461-1.023v4.68zm1.334 0h-.667v-5.378c.206-.154.426-.286.667-.377v5.755zm1.333 0h-.667v-5.905c.251-.027.328-.046.667.006v5.899zm1.333 0h-.667v-5.7l.253.123c.119-.207.261-.395.414-.572v6.149zm6.727 0h-6.06v-6.748c.532-.366 1.16-.585 1.842-.585 1.809 0 3.275 1.494 3.41 3.386 1.303-.638 2.748.387 2.748 1.876 0 1.143-.869 2.071-1.94 2.071z"/></svg>
+                              </a>
+                            </div>
+                      </div>
+                    </div>
+                  </a>
+
+                  <!-- Path Planner -->
+                  <a class="card-a">
+                    <div class="portfolio-back">
+                      <h2 class="card-text-title">TITLE</h2>
+                      <h2 class="card-description">Description<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></h2>
+                      <div class="portfolio-card" id="card-cover">
+                          <img src="img/thumbnail/placeholder.png" class="card-image">
+                          <hr class="card-divider">
+                          <div class="card-contents">
+                              <h2 class="card-title">Title</h2>
+                          </div>
+                          </div>
+
+                          <div class="card-player">
+                            <div class="audio-player left">
+                              <div class="icon-container">
+                                <audio preload="metadata" src="mus/testsong.mp3"></audio>
+                              </div>
+                              <div class="controls">
+                                <button class="player-button">
+                                  <svg viewBox="0 0 20 20" fill="#3D3132">
+                                    <use class="useBtn" href="#icon-play" />
+                                  </svg>
+                                </button>
+                                <input type="range" class="timeline" min="0" max="100" step="1" value="0" onchange="updateTextInput(this.value);">
+                              </div>
+                              <a href="https://soundcloud.com/starlotte-117" class="sc-link" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-14.333 15.524c-.405-.365-.667-.903-.667-1.512 0-.608.262-1.146.667-1.512v3.024zm1.333.476c-.243 0-.369.003-.667-.092v-3.792c.316-.101.465-.097.667-.081v3.965zm1.333 0h-.666v-3.778l.206.121c.091-.375.253-.718.461-1.023v4.68zm1.334 0h-.667v-5.378c.206-.154.426-.286.667-.377v5.755zm1.333 0h-.667v-5.905c.251-.027.328-.046.667.006v5.899zm1.333 0h-.667v-5.7l.253.123c.119-.207.261-.395.414-.572v6.149zm6.727 0h-6.06v-6.748c.532-.366 1.16-.585 1.842-.585 1.809 0 3.275 1.494 3.41 3.386 1.303-.638 2.748.387 2.748 1.876 0 1.143-.869 2.071-1.94 2.071z"/></svg>
+                              </a>
+                            </div>
+                      </div>
+                    </div>
+                  </a>
+
+          <svg class="plyrBtns" style="display:none" aria-hidden="true">
+            <symbol class="icon icon-play" id="icon-play" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
+            </symbol>
+            <symbol class="icon icon-pause" id="icon-pause" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zM7 8a1 1 0 012 0v4a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v4a1 1 0 102 0V8a1 1 0 00-1-1z" clip-rule="evenodd" />
+            </symbol>
+            <symbol class="icon icon-mute" id="icon-mute" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.707.707L4.586 13H2a1 1 0 01-1-1V8a1 1 0 011-1h2.586l3.707-3.707a1 1 0 011.09-.217zM14.657 2.929a1 1 0 011.414 0A9.972 9.972 0 0119 10a9.972 9.972 0 01-2.929 7.071 1 1 0 01-1.414-1.414A7.971 7.971 0 0017 10c0-2.21-.894-4.208-2.343-5.657a1 1 0 010-1.414zm-2.829 2.828a1 1 0 011.415 0A5.983 5.983 0 0115 10a5.984 5.984 0 01-1.757 4.243 1 1 0 01-1.415-1.415A3.984 3.984 0 0013 10a3.983 3.983 0 00-1.172-2.828 1 1 0 010-1.415z" clip-rule="evenodd" />
+            </symbol>
+            <symbol class="icon icon-unmute" id="icon-unmute" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.707.707L4.586 13H2a1 1 0 01-1-1V8a1 1 0 011-1h2.586l3.707-3.707a1 1 0 011.09-.217zM12.293 7.293a1 1 0 011.414 0L15 8.586l1.293-1.293a1 1 0 111.414 1.414L16.414 10l1.293 1.293a1 1 0 01-1.414 1.414L15 11.414l-1.293 1.293a1 1 0 01-1.414-1.414L13.586 10l-1.293-1.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+            </symbol>
+          </svg>
+          <!-- #endregion -->
+      </div>
+    </div>
+
+
+
+
+
+
+    <!-- #region panels -->
+    <div class="projects-outer" id="portfolio-3">
+      <div class="projects-header slide-in-title slide-in">
+        <h1 class="projects-header slide-in-title slide-in" id="slide-in-header-projects">Past SFX Works</h1>
+        <div class="arrow-button-up3">
+          <a href="#portfolio-2">
+            <button class="arrow-nav-style button learn-more-button" id="lmbt" href="#portfolio-2" onclick='switchTo("projects");'>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill="currentColor"><path d="M4 12c.8.8 2.1.8 2.8 0L10 8.9V20c0 1.1.9 2 2 2s2-.9 2-2V8.9l3.2 3.2c.8.8 2.1.8 2.8 0 .8-.8.8-2 0-2.8l-6.6-6.6C13 2.2 12.5 2 12 2c-.5 0-1 .2-1.4.6L4 9.2c-.8.7-.8 2 0 2.8z"></path></g></svg>
+            </button>
+            </a>
+          </div>
+          <div class="arrow-button-down3">
+              <button class="arrow-nav-style button learn-more-button">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill="currentColor"><path d="M20 12c-.8-.8-2.1-.8-2.8 0L14 15.1V4c0-1.1-.9-2-2-2s-2 .9-2 2v11.2L6.8 12c-.8-.8-2.1-.8-2.8 0-.8.8-.8 2 0 2.8l6.6 6.6c.4.4.9.6 1.4.6.5 0 1-.2 1.4-.6l6.5-6.5c.9-.8.9-2.1.1-2.9z"></path></g></svg>
+              </button>
+            </div>
+          </div>
+        <div class="projects-container">
+            <!-- TurtleDash -->
+            <a class="card-a">
+              <div class="portfolio-back">
+                <h2 class="card-text-title">TITLE</h2>
+                <h2 class="card-description">Description<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></h2>
+                <div class="portfolio-card" id="card-cover">
+                  <img class="card-image" src="img/thumbnail/placeholder.png"/>
+                    <hr class="card-divider">
+                    <div class="card-contents">
+                        <h2 class="card-title">Title</h2>
+                      </div>
+                    </div>
+
+                    <div class="card-player">
+                      <div class="audio-player left">
+                        <div class="icon-container">
+                          <audio preload="metadata" src="mus/testsong.mp3"></audio>
+                        </div>
+                        <div class="controls">
+                          <button class="player-button">
+                            <svg viewBox="0 0 20 20" fill="#3D3132">
+                              <use class="useBtn" href="#icon-play" />
+                            </svg>
+                          </button>
+                          <input type="range" class="timeline" min="0" max="100" step="1" value="0" onchange="updateTextInput(this.value);">
+                        </div>
+                        <a href="https://soundcloud.com/starlotte-117" class="sc-link" target="_blank">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-14.333 15.524c-.405-.365-.667-.903-.667-1.512 0-.608.262-1.146.667-1.512v3.024zm1.333.476c-.243 0-.369.003-.667-.092v-3.792c.316-.101.465-.097.667-.081v3.965zm1.333 0h-.666v-3.778l.206.121c.091-.375.253-.718.461-1.023v4.68zm1.334 0h-.667v-5.378c.206-.154.426-.286.667-.377v5.755zm1.333 0h-.667v-5.905c.251-.027.328-.046.667.006v5.899zm1.333 0h-.667v-5.7l.253.123c.119-.207.261-.395.414-.572v6.149zm6.727 0h-6.06v-6.748c.532-.366 1.16-.585 1.842-.585 1.809 0 3.275 1.494 3.41 3.386 1.303-.638 2.748.387 2.748 1.876 0 1.143-.869 2.071-1.94 2.071z"/></svg>
+                        </a>
+                      </div>
+                </div>
+              </div>
+            </a>
+
+
+            <!-- Blender4FTC -->
+            <a class="card-a" target="_blank">
+              <div class="portfolio-back">
+                <h2 class="card-text-title">TITLE</h2>
+                <h2 class="card-description">Description<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></h2>
+                <div class="portfolio-card" id="card-cover">
+                    <img src="img/thumbnail/placeholder.png" class="card-image">
+                    <hr class="card-divider">
+                    <div class="card-contents">
+                        <h2 class="card-title">Title</h2>
+                      </div>
+                    </div>
+
+                    <div class="card-player">
+                      <div class="audio-player left">
+                        <div class="icon-container">
+                          <audio preload="metadata" src="mus/testsong.mp3"></audio>
+                        </div>
+                        <div class="controls">
+                          <button class="player-button">
+                            <svg viewBox="0 0 20 20" fill="#3D3132">
+                              <use class="useBtn" href="#icon-play" />
+                            </svg>
+                          </button>
+                          <input type="range" class="timeline" min="0" max="100" step="1" value="0" onchange="updateTextInput(this.value);">
+                        </div>
+                        <a href="https://soundcloud.com/starlotte-117" class="sc-link" target="_blank">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-14.333 15.524c-.405-.365-.667-.903-.667-1.512 0-.608.262-1.146.667-1.512v3.024zm1.333.476c-.243 0-.369.003-.667-.092v-3.792c.316-.101.465-.097.667-.081v3.965zm1.333 0h-.666v-3.778l.206.121c.091-.375.253-.718.461-1.023v4.68zm1.334 0h-.667v-5.378c.206-.154.426-.286.667-.377v5.755zm1.333 0h-.667v-5.905c.251-.027.328-.046.667.006v5.899zm1.333 0h-.667v-5.7l.253.123c.119-.207.261-.395.414-.572v6.149zm6.727 0h-6.06v-6.748c.532-.366 1.16-.585 1.842-.585 1.809 0 3.275 1.494 3.41 3.386 1.303-.638 2.748.387 2.748 1.876 0 1.143-.869 2.071-1.94 2.071z"/></svg>
+                        </a>
+                      </div>
+                </div>
+              </div>
+            </a>
+
+
+            <!-- First2Click -->
+            <a class="card-a" target="_blank">
+              <div class="portfolio-back">
+                <h2 class="card-text-title">TITLE</h2>
+                <h2 class="card-description">Description<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></h2>
+                <div class="portfolio-card" id="card-cover">
+                    <img src="img/thumbnail/placeholder.png" class="card-image">
+                    <hr class="card-divider">
+                    <div class="card-contents">
+                        <h2 class="card-title">Title</h2>
+                      </div>
+                    </div>
+
+                    <div class="card-player">
+                      <div class="audio-player left">
+                        <div class="icon-container">
+                          <audio preload="metadata" src="mus/testsong.mp3"></audio>
+                        </div>
+                        <div class="controls">
+                          <button class="player-button">
+                            <svg viewBox="0 0 20 20" fill="#3D3132">
+                              <use class="useBtn" href="#icon-play" />
+                            </svg>
+                          </button>
+                          <input type="range" class="timeline" min="0" max="100" step="1" value="0" onchange="updateTextInput(this.value);">
+                        </div>
+                        <a href="https://soundcloud.com/starlotte-117" class="sc-link" target="_blank">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-14.333 15.524c-.405-.365-.667-.903-.667-1.512 0-.608.262-1.146.667-1.512v3.024zm1.333.476c-.243 0-.369.003-.667-.092v-3.792c.316-.101.465-.097.667-.081v3.965zm1.333 0h-.666v-3.778l.206.121c.091-.375.253-.718.461-1.023v4.68zm1.334 0h-.667v-5.378c.206-.154.426-.286.667-.377v5.755zm1.333 0h-.667v-5.905c.251-.027.328-.046.667.006v5.899zm1.333 0h-.667v-5.7l.253.123c.119-.207.261-.395.414-.572v6.149zm6.727 0h-6.06v-6.748c.532-.366 1.16-.585 1.842-.585 1.809 0 3.275 1.494 3.41 3.386 1.303-.638 2.748.387 2.748 1.876 0 1.143-.869 2.071-1.94 2.071z"/></svg>
+                        </a>
+                      </div>
+                </div>
+              </div>
+            </a>
+
+            <!-- Endless Oceans -->
+            <a class="card-a" target="_blank">
+              <div class="portfolio-back">
+                <h2 class="card-text-title">TITLE</h2>
+                <h2 class="card-description">Description<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></h2>
+                <div class="portfolio-card" id="card-cover">
+                    <img src="img/thumbnail/placeholder.png" class="card-image">
+                    <hr class="card-divider">
+                    <div class="card-contents">
+                        <h2 class="card-title">Title</h2>
+              </div>
+                    </div>
+
+                    <div class="card-player">
+                      <div class="audio-player left">
+                        <div class="icon-container">
+                          <audio preload="metadata" src="mus/testsong.mp3"></audio>
+                        </div>
+                        <div class="controls">
+                          <button class="player-button">
+                            <svg viewBox="0 0 20 20" fill="#3D3132">
+                              <use class="useBtn" href="#icon-play" />
+                            </svg>
+                          </button>
+                          <input type="range" class="timeline" min="0" max="100" step="1" value="0" onchange="updateTextInput(this.value);">
+                        </div>
+                        <a href="https://soundcloud.com/starlotte-117" class="sc-link" target="_blank">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-14.333 15.524c-.405-.365-.667-.903-.667-1.512 0-.608.262-1.146.667-1.512v3.024zm1.333.476c-.243 0-.369.003-.667-.092v-3.792c.316-.101.465-.097.667-.081v3.965zm1.333 0h-.666v-3.778l.206.121c.091-.375.253-.718.461-1.023v4.68zm1.334 0h-.667v-5.378c.206-.154.426-.286.667-.377v5.755zm1.333 0h-.667v-5.905c.251-.027.328-.046.667.006v5.899zm1.333 0h-.667v-5.7l.253.123c.119-.207.261-.395.414-.572v6.149zm6.727 0h-6.06v-6.748c.532-.366 1.16-.585 1.842-.585 1.809 0 3.275 1.494 3.41 3.386 1.303-.638 2.748.387 2.748 1.876 0 1.143-.869 2.071-1.94 2.071z"/></svg>
+                        </a>
+                      </div>
+                </div>
+              </div>
+            </a>
+
+
+
+
+            <!-- Path Planner -->
+            <a class="card-a">
+              <div class="portfolio-back">
+                <h2 class="card-text-title">TITLE</h2>
+                <h2 class="card-description">Description<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></h2>
+                <div class="portfolio-card" id="card-cover">
+                    <img src="img/thumbnail/placeholder.png" class="card-image">
+                    <hr class="card-divider">
+                    <div class="card-contents">
+                        <h2 class="card-title">Title</h2>
+                    </div>
+                    </div>
+
+                    <div class="card-player">
+                      <div class="audio-player left">
+                        <div class="icon-container">
+                          <audio preload="metadata" src="mus/testsong.mp3"></audio>
+                        </div>
+                        <div class="controls">
+                          <button class="player-button">
+                            <svg viewBox="0 0 20 20" fill="#3D3132">
+                              <use class="useBtn" href="#icon-play" />
+                            </svg>
+                          </button>
+                          <input type="range" class="timeline" min="0" max="100" step="1" value="0" onchange="updateTextInput(this.value);">
+                        </div>
+                        <a href="https://soundcloud.com/starlotte-117" class="sc-link" target="_blank">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-14.333 15.524c-.405-.365-.667-.903-.667-1.512 0-.608.262-1.146.667-1.512v3.024zm1.333.476c-.243 0-.369.003-.667-.092v-3.792c.316-.101.465-.097.667-.081v3.965zm1.333 0h-.666v-3.778l.206.121c.091-.375.253-.718.461-1.023v4.68zm1.334 0h-.667v-5.378c.206-.154.426-.286.667-.377v5.755zm1.333 0h-.667v-5.905c.251-.027.328-.046.667.006v5.899zm1.333 0h-.667v-5.7l.253.123c.119-.207.261-.395.414-.572v6.149zm6.727 0h-6.06v-6.748c.532-.366 1.16-.585 1.842-.585 1.809 0 3.275 1.494 3.41 3.386 1.303-.638 2.748.387 2.748 1.876 0 1.143-.869 2.071-1.94 2.071z"/></svg>
+                        </a>
+                      </div>
+                </div>
+              </div>
+            </a>
+            <!-- Path Planner -->
+            <a class="card-a" target="_blank">
+              <div class="portfolio-back">
+                <h2 class="card-text-title">TITLE</h2>
+                <h2 class="card-description">Description<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></h2>
+                <div class="portfolio-card" id="card-cover" style="--text: 'View Preview'">
+                    <img src="img/thumbnail/placeholder.png" class="card-image">
+                    <hr class="card-divider">
+                    <div class="card-contents">
+                        <h2 class="card-title">Title</h2>
+                    </div>
+                    </div>
+
+                    <div class="card-player">
+                      <div class="audio-player left">
+                        <div class="icon-container">
+                          <audio preload="metadata" src="mus/testsong.mp3"></audio>
+                        </div>
+                        <div class="controls">
+                          <button class="player-button">
+                            <svg viewBox="0 0 20 20" fill="#3D3132">
+                              <use class="useBtn" href="#icon-play" />
+                            </svg>
+                          </button>
+                          <input type="range" class="timeline" min="0" max="100" step="1" value="0" onchange="updateTextInput(this.value);">
+                        </div>
+                        <a href="https://soundcloud.com/starlotte-117" class="sc-link" target="_blank">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-14.333 15.524c-.405-.365-.667-.903-.667-1.512 0-.608.262-1.146.667-1.512v3.024zm1.333.476c-.243 0-.369.003-.667-.092v-3.792c.316-.101.465-.097.667-.081v3.965zm1.333 0h-.666v-3.778l.206.121c.091-.375.253-.718.461-1.023v4.68zm1.334 0h-.667v-5.378c.206-.154.426-.286.667-.377v5.755zm1.333 0h-.667v-5.905c.251-.027.328-.046.667.006v5.899zm1.333 0h-.667v-5.7l.253.123c.119-.207.261-.395.414-.572v6.149zm6.727 0h-6.06v-6.748c.532-.366 1.16-.585 1.842-.585 1.809 0 3.275 1.494 3.41 3.386 1.303-.638 2.748.387 2.748 1.876 0 1.143-.869 2.071-1.94 2.071z"/></svg>
+                        </a>
+                      </div>
+                </div>
+              </div>
+            </a>
+
+            <!-- Path Planner -->
+            <a class="card-a">
+              <div class="portfolio-back">
+                <h2 class="card-text-title">TITLE</h2>
+                <h2 class="card-description">Description<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></h2>
+                <div class="portfolio-card" id="card-cover">
+                    <img src="img/thumbnail/placeholder.png" class="card-image">
+                    <hr class="card-divider">
+                    <div class="card-contents">
+                        <h2 class="card-title">Title</h2>
+                    </div>
+                    </div>
+
+                    <div class="card-player">
+                      <div class="audio-player left">
+                        <div class="icon-container">
+                          <audio preload="metadata" src="mus/testsong.mp3"></audio>
+                        </div>
+                        <div class="controls">
+                          <button class="player-button">
+                            <svg viewBox="0 0 20 20" fill="#3D3132">
+                              <use class="useBtn" href="#icon-play" />
+                            </svg>
+                          </button>
+                          <input type="range" class="timeline" min="0" max="100" step="1" value="0" onchange="updateTextInput(this.value);">
+                        </div>
+                        <a href="https://soundcloud.com/starlotte-117" class="sc-link" target="_blank">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-14.333 15.524c-.405-.365-.667-.903-.667-1.512 0-.608.262-1.146.667-1.512v3.024zm1.333.476c-.243 0-.369.003-.667-.092v-3.792c.316-.101.465-.097.667-.081v3.965zm1.333 0h-.666v-3.778l.206.121c.091-.375.253-.718.461-1.023v4.68zm1.334 0h-.667v-5.378c.206-.154.426-.286.667-.377v5.755zm1.333 0h-.667v-5.905c.251-.027.328-.046.667.006v5.899zm1.333 0h-.667v-5.7l.253.123c.119-.207.261-.395.414-.572v6.149zm6.727 0h-6.06v-6.748c.532-.366 1.16-.585 1.842-.585 1.809 0 3.275 1.494 3.41 3.386 1.303-.638 2.748.387 2.748 1.876 0 1.143-.869 2.071-1.94 2.071z"/></svg>
+                        </a>
+                      </div>
+                </div>
+              </div>
+            </a>
+
+            <!-- Path Planner -->
+            <a class="card-a">
+              <div class="portfolio-back">
+                <h2 class="card-text-title">TITLE</h2>
+                <h2 class="card-description">Description<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></h2>
+                <div class="portfolio-card" id="card-cover">
+                    <img src="img/thumbnail/placeholder.png" class="card-image">
+                    <hr class="card-divider">
+                    <div class="card-contents">
+                        <h2 class="card-title">Title</h2>
+                    </div>
+                    </div>
+
+                    <div class="card-player">
+                      <div class="audio-player left">
+                        <div class="icon-container">
+                          <audio preload="metadata" src="mus/testsong.mp3"></audio>
+                        </div>
+                        <div class="controls">
+                          <button class="player-button">
+                            <svg viewBox="0 0 20 20" fill="#3D3132">
+                              <use class="useBtn" href="#icon-play" />
+                            </svg>
+                          </button>
+                          <input type="range" class="timeline" min="0" max="100" step="1" value="0" onchange="updateTextInput(this.value);">
+                        </div>
+                        <a href="https://soundcloud.com/starlotte-117" class="sc-link" target="_blank">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-14.333 15.524c-.405-.365-.667-.903-.667-1.512 0-.608.262-1.146.667-1.512v3.024zm1.333.476c-.243 0-.369.003-.667-.092v-3.792c.316-.101.465-.097.667-.081v3.965zm1.333 0h-.666v-3.778l.206.121c.091-.375.253-.718.461-1.023v4.68zm1.334 0h-.667v-5.378c.206-.154.426-.286.667-.377v5.755zm1.333 0h-.667v-5.905c.251-.027.328-.046.667.006v5.899zm1.333 0h-.667v-5.7l.253.123c.119-.207.261-.395.414-.572v6.149zm6.727 0h-6.06v-6.748c.532-.366 1.16-.585 1.842-.585 1.809 0 3.275 1.494 3.41 3.386 1.303-.638 2.748.387 2.748 1.876 0 1.143-.869 2.071-1.94 2.071z"/></svg>
+                        </a>
+                      </div>
+                </div>
+              </div>
+            </a>
+
+            <!-- Path Planner -->
+            <a class="card-a">
+              <div class="portfolio-back">
+                <h2 class="card-text-title">TITLE</h2>
+                <h2 class="card-description">Description<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></h2>
+                <div class="portfolio-card" id="card-cover">
+                    <img src="img/thumbnail/placeholder.png" class="card-image">
+                    <hr class="card-divider">
+                    <div class="card-contents">
+                        <h2 class="card-title">Title</h2>
+                    </div>
+                    </div>
+
+                    <div class="card-player">
+                      <div class="audio-player left">
+                        <div class="icon-container">
+                          <audio preload="metadata" src="mus/testsong.mp3"></audio>
+                        </div>
+                        <div class="controls">
+                          <button class="player-button">
+                            <svg viewBox="0 0 20 20" fill="#3D3132">
+                              <use class="useBtn" href="#icon-play" />
+                            </svg>
+                          </button>
+                          <input type="range" class="timeline" min="0" max="100" step="1" value="0" onchange="updateTextInput(this.value);">
+                        </div>
+                        <a href="https://soundcloud.com/starlotte-117" class="sc-link" target="_blank">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-14.333 15.524c-.405-.365-.667-.903-.667-1.512 0-.608.262-1.146.667-1.512v3.024zm1.333.476c-.243 0-.369.003-.667-.092v-3.792c.316-.101.465-.097.667-.081v3.965zm1.333 0h-.666v-3.778l.206.121c.091-.375.253-.718.461-1.023v4.68zm1.334 0h-.667v-5.378c.206-.154.426-.286.667-.377v5.755zm1.333 0h-.667v-5.905c.251-.027.328-.046.667.006v5.899zm1.333 0h-.667v-5.7l.253.123c.119-.207.261-.395.414-.572v6.149zm6.727 0h-6.06v-6.748c.532-.366 1.16-.585 1.842-.585 1.809 0 3.275 1.494 3.41 3.386 1.303-.638 2.748.387 2.748 1.876 0 1.143-.869 2.071-1.94 2.071z"/></svg>
+                        </a>
+                      </div>
+                </div>
+              </div>
+            </a>
+
+            <!-- Path Planner -->
+            <a class="card-a">
+              <div class="portfolio-back">
+                <h2 class="card-text-title">TITLE</h2>
+                <h2 class="card-description">Description<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></h2>
+                <div class="portfolio-card" id="card-cover">
+                    <img src="img/thumbnail/placeholder.png" class="card-image">
+                    <hr class="card-divider">
+                    <div class="card-contents">
+                        <h2 class="card-title">Title</h2>
+                    </div>
+                    </div>
+
+                    <div class="card-player">
+                      <div class="audio-player left">
+                        <div class="icon-container">
+                          <audio preload="metadata" src="mus/testsong.mp3"></audio>
+                        </div>
+                        <div class="controls">
+                          <button class="player-button">
+                            <svg viewBox="0 0 20 20" fill="#3D3132">
+                              <use class="useBtn" href="#icon-play" />
+                            </svg>
+                          </button>
+                          <input type="range" class="timeline" min="0" max="100" step="1" value="0" onchange="updateTextInput(this.value);">
+                        </div>
+                        <a href="https://soundcloud.com/starlotte-117" class="sc-link" target="_blank">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-14.333 15.524c-.405-.365-.667-.903-.667-1.512 0-.608.262-1.146.667-1.512v3.024zm1.333.476c-.243 0-.369.003-.667-.092v-3.792c.316-.101.465-.097.667-.081v3.965zm1.333 0h-.666v-3.778l.206.121c.091-.375.253-.718.461-1.023v4.68zm1.334 0h-.667v-5.378c.206-.154.426-.286.667-.377v5.755zm1.333 0h-.667v-5.905c.251-.027.328-.046.667.006v5.899zm1.333 0h-.667v-5.7l.253.123c.119-.207.261-.395.414-.572v6.149zm6.727 0h-6.06v-6.748c.532-.366 1.16-.585 1.842-.585 1.809 0 3.275 1.494 3.41 3.386 1.303-.638 2.748.387 2.748 1.876 0 1.143-.869 2.071-1.94 2.071z"/></svg>
+                        </a>
+                      </div>
+                </div>
+              </div>
+            </a>
+
+    <svg class="plyrBtns" style="display:none" aria-hidden="true">
+      <symbol class="icon icon-play" id="icon-play" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
+      </symbol>
+      <symbol class="icon icon-pause" id="icon-pause" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zM7 8a1 1 0 012 0v4a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v4a1 1 0 102 0V8a1 1 0 00-1-1z" clip-rule="evenodd" />
+      </symbol>
+      <symbol class="icon icon-mute" id="icon-mute" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.707.707L4.586 13H2a1 1 0 01-1-1V8a1 1 0 011-1h2.586l3.707-3.707a1 1 0 011.09-.217zM14.657 2.929a1 1 0 011.414 0A9.972 9.972 0 0119 10a9.972 9.972 0 01-2.929 7.071 1 1 0 01-1.414-1.414A7.971 7.971 0 0017 10c0-2.21-.894-4.208-2.343-5.657a1 1 0 010-1.414zm-2.829 2.828a1 1 0 011.415 0A5.983 5.983 0 0115 10a5.984 5.984 0 01-1.757 4.243 1 1 0 01-1.415-1.415A3.984 3.984 0 0013 10a3.983 3.983 0 00-1.172-2.828 1 1 0 010-1.415z" clip-rule="evenodd" />
+      </symbol>
+      <symbol class="icon icon-unmute" id="icon-unmute" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.707.707L4.586 13H2a1 1 0 01-1-1V8a1 1 0 011-1h2.586l3.707-3.707a1 1 0 011.09-.217zM12.293 7.293a1 1 0 011.414 0L15 8.586l1.293-1.293a1 1 0 111.414 1.414L16.414 10l1.293 1.293a1 1 0 01-1.414 1.414L15 11.414l-1.293 1.293a1 1 0 01-1.414-1.414L13.586 10l-1.293-1.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+      </symbol>
+    </svg>
+    <!-- #endregion -->
+</div>
+</div>
+
+
+
+
 
             <div class="contact-section" id="contact">
               <div class="bg-graphic">
@@ -514,8 +1301,8 @@ img#bg-graphic{
                           <img src="img/prices1.png" class="card-image">
                           <hr class="card-divider">
                           <div class="card-contents">
-                              <h2 class="card-title-2">Individual Songs</h2>
-                              <h2 class="card-description"><br>• $25 for first 60 seconds<br>• $20 per additional minutes<br>• First revision free, $5 each additional revision</h2>
+                              <h2 class="card-title-2">Individual<br>Songs</h2>
+                              <h2 class="card-description-2">• $25 for first 60 seconds<br>• $20 per additional minutes<br>• First revision free, $5 each additional revision</h2>
 
                           </div>
                       </div>
@@ -527,8 +1314,8 @@ img#bg-graphic{
                           <img src="img/prices2.png" class="card-image">
                           <hr class="card-divider">
                           <div class="card-contents">
-                              <h2 class="card-title-2">Sound Effects</h2>
-                              <h2 class="card-description"><br>• $5-10 each depending<br>on complexity. <br>• Prices may vary for larger projects. Please get in touch for an estimate.</h2>
+                              <h2 class="card-title-2">Sound<br>Effects</h2>
+                              <h2 class="card-description-2">• $5-10 each depending<br>on complexity. <br>• Prices may vary for larger projects. Please get in touch for an estimate.</h2>
 
                           </div>
                       </div>
@@ -541,7 +1328,7 @@ img#bg-graphic{
                           <hr class="card-divider">
                           <div class="card-contents">
                               <h2 class="card-title-2">Multi-Song Projects</h2>
-                              <h2 class="card-description"><br>• 3 or more songs <br>• Prices vary significantly from project to project. Please get in touch for an estimate.</h2>
+                              <h2 class="card-description-2">• 3 or more songs <br>• Prices vary significantly from project to project. Please get in touch for an estimate.</h2>
 
                           </div>
                       </div>
