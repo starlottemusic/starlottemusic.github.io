@@ -302,6 +302,16 @@ main {
     right: 30.5%;
 }
 
+.info-paragraph-2 {
+    width: 55%;
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: var(--text-primary);
+    text-align: left;
+    position:absolute;
+    right: 22.5%;
+}
+
 .nav-style {
     background: var(--accent-transparent);
     border: transparent;
@@ -519,7 +529,8 @@ main {
 /* #region Cards */
 
 .card {
-    float: left;
+    float: center;
+    left: -17.5vw;
     display: inline-block;
     margin:10px;
     width: 15%;
@@ -698,14 +709,13 @@ main {
 }
 
 .social-right {
-    font-size: clamp(0.6rem, 1rem, 3vw);
+    font-size: clamp(0.5rem, 1rem, 2.5vw);
     margin-left:0px;
     display: inline-block;
     background: var(--bg-secondary);
     height: 100%;
     width: clamp(120px, 15rem, 27%);
     border-radius: 0px 10px 10px 0px;
-
 }
 
 .form-right {
@@ -912,6 +922,14 @@ main {
         text-align: center;
     }
 
+    .info-paragraph {
+      visibility: visible;
+    }
+
+    .info-paragraph-2 {
+      visibility: hidden;
+    }
+
     .contact-center-container {
         margin:auto;
         width:40%;
@@ -1069,6 +1087,17 @@ main {
     transition: all .3s;
   }
 
+  .social-right {
+      font-size: 2.25vw;
+  }
+
+  .card {
+    float: center;
+    left: -5vw;
+    top: 80px;
+    width: 100%;
+    height: 31vw;
+  }
 
   .card-title {
       font-family: seaford;
@@ -1079,13 +1108,16 @@ main {
 
   .card-title-2 {
       font-family: seaford;
+      padding-left: 15px;
       font-size: 3vw;
+      font-weight: 600;
       color: var(--text-primary);
+      text-align: left;
       position: absolute;
-      text-align: center;
-      top: -65px;
-      left: 40%;
+      top: -10vw;
+      left: 6vw;
   }
+
 
   .card-text-title {
       font-family: seaford;
@@ -1094,6 +1126,14 @@ main {
       font-size: 1.25em;
       font-weight: 600;
       color: var(--text-primary);
+  }
+
+  .info-paragraph {
+    visibility: hidden;
+  }
+
+  .info-paragraph-2 {
+    visibility: visible;
   }
 
   .card-description {
@@ -1105,11 +1145,13 @@ main {
   }
 
   .card-description-2 {
+      position: absolute;
       padding-left: 15px;
       font-size: 2vw;
       font-weight: 400;
       color: var(--text-primary);
       text-align: left;
+      left: -5px
   }
 
     .experience-container {
@@ -1117,12 +1159,6 @@ main {
     }
     .projects-container {
         padding:8px;
-    }
-    .card {
-      position: relative;
-      top: 25%;
-      width: 23vw;
-      height: 35vw;
     }
     .home-center-container {
         margin:auto;
@@ -1138,25 +1174,23 @@ main {
     }
 
     .contact-center-container {
-        margin:auto;
-
-        width:100%;
-        height:30%;
-        position:absolute;
-        top:0;
-        bottom:0;
-        left:0;
-        right:0;
+        position: absolute;
+        width:75%;
+        height:25%;
+        bottom: 120px;
+        right: 0;
         text-align: center;
     }
 
     .prices-container {
         margin:auto;
 
-        width:100%;
+        width:25%;
         height:30%;
-        position:absolute;
-        top:0;
+        position: absolute;
+        top: 25%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
         left:6vw;
         text-align: center;
     }
@@ -1167,9 +1201,8 @@ main {
         width:100%;
         height:30%;
         position:absolute;
-        top:0;
-        left:0;
-        right:0;
+        top:150px;
+        left:10vw;
         text-align: center;
     }
 
@@ -1225,7 +1258,7 @@ main {
         position:relative;
         bottom:-8px;
         font-size: clamp(0.3rem, 0.8rem, 6vw);
-        width: 55%;
+        width: 75%;
         color: var(--text-primary);
     }
 
