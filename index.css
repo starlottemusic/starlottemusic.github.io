@@ -1096,7 +1096,7 @@ main {
     left: -5vw;
     top: 25px;
     width: 100%;
-    height: 22.5vh;
+    height: 20vh;
   }
 
   .card-title {
@@ -1189,7 +1189,7 @@ main {
         width:25%;
         height:30%;
         position: absolute;
-        top: 25%;
+        top: 30%;
         -ms-transform: translateY(-50%);
         transform: translateY(-50%);
         left:6vw;
