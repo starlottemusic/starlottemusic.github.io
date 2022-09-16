@@ -1175,10 +1175,10 @@ main {
 
     .contact-center-container {
         position: absolute;
-        width:75%;
+        width:100%;
         height:25%;
         bottom: 120px;
-        right: 0;
+        right: -16%;
         text-align: center;
     }
 
@@ -1202,7 +1202,7 @@ main {
         height:30%;
         position:absolute;
         top:150px;
-        left:10vw;
+        left:12vw;
         text-align: center;
     }
 
@@ -1258,7 +1258,7 @@ main {
         position:relative;
         bottom:-8px;
         font-size: clamp(0.3rem, 0.8rem, 6vw);
-        width: 75%;
+        width: 60%;
         color: var(--text-primary);
     }
 
